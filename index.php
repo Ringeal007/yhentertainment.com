@@ -807,10 +807,38 @@ if (!empty($config['site_start_date'])) {
                                         </h4>
 
                                         <p>
-                                            <?php echo htmlspecialchars($lang['article003-CPU'] ?? ''); ?>
-                                            <br \>
-                                            <?php echo htmlspecialchars($lang['article003-GPU'] ?? ''); ?>
-                                            <br \>
+                                            <blockquote>
+                                                <?php echo htmlspecialchars($lang['article003-CPU-1'] ?? ''); ?>
+                                            </blockquote>
+                                            <ul>
+                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-1'] ?? ''); ?>
+                                                <br \><br \>
+                                                <?php echo htmlspecialchars($lang['article003-CPU-1-2'] ?? ''); ?>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-2-1'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-2-2'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-2-3'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-2-4'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-2-5'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-2-6'] ?? ''); ?></li>
+                                                <br \><br \>
+                                                <?php echo htmlspecialchars($lang['article003-CPU-1-3'] ?? ''); ?>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-3-1'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-3-2'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-3-3'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-3-4'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-3-5'] ?? ''); ?></li>
+                                                <br \><br \>
+                                                <?php echo htmlspecialchars($lang['article003-CPU-1-4'] ?? ''); ?>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-4-1'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-4-2'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-4-3'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-4-4'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-4-5'] ?? ''); ?></li>
+                                                <li>&emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-4-6'] ?? ''); ?></li>
+                                            </ul>
+                                            <blockquote>
+                                                <?php echo htmlspecialchars($lang['article003-GPU-1'] ?? ''); ?>
+                                            </blockquote>
                                         </p>
 
                                     </div> <!-- end resume-block -->
@@ -1255,6 +1283,8 @@ if (!empty($config['site_start_date'])) {
                                         class=""><?php echo htmlspecialchars($lang['article1'] ?? ''); ?></a></li>
                                 <li><a href="#article2"
                                         class=""><?php echo htmlspecialchars($lang['article2'] ?? ''); ?></a></li>
+                                <li><a href="#article3"
+                                        class=""><?php echo htmlspecialchars($lang['article3'] ?? ''); ?></a></li>
                             </ul>
                         </li>
                         <li><a href="#partnership"
