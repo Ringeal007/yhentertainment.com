@@ -243,10 +243,10 @@ if (!empty($config['site_start_date'])) {
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" href="/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon_io/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon_io/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" href="/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon_io/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon_io/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -282,9 +282,9 @@ if (!empty($config['site_start_date'])) {
                                 <a href="?lang=zh-tw">繁體中文</a>
                                 </li>
                                 <li<?php if ($lang_code === 'uy')
-                        echo ' class="current"'; ?>>
-                        <a href="?lang=uy">ئۇيغۇرچە</a>
-                        </li>
+                                    echo ' class="current"'; ?>>
+                                    <a href="?lang=uy">ئۇيغۇرچە</a>
+                                    </li>
                 </ul>
             </nav>
         </div> <!-- end row -->
