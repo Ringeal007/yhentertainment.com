@@ -282,9 +282,9 @@ if (!empty($config['site_start_date'])) {
                                 <a href="?lang=zh-tw">繁體中文</a>
                                 </li>
                                 <li<?php if ($lang_code === 'uy')
-                        echo ' class="current"'; ?>>
-                        <a href="?lang=uy">ئۇيغۇرچە</a>
-                        </li>
+                                    echo ' class="current"'; ?>>
+                                    <a href="?lang=uy">ئۇيغۇرچە</a>
+                                    </li>
                 </ul>
             </nav>
         </div> <!-- end row -->
@@ -669,6 +669,7 @@ if (!empty($config['site_start_date'])) {
                                         <hr
                                             style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
 
+
                                         <section id="article2">
                                             <!-- article 002 -->
                                             <div class="resume-block__header">
@@ -778,6 +779,39 @@ if (!empty($config['site_start_date'])) {
                                             <br \>
                                             </p>
 
+                                        <!--article 003-->
+                                        <hr
+                                            style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
+                                        
+                                        <section id="article3">
+                                        
+                                        <div class="resume-block__header">
+                                                <h4 class="h3">
+                                                    <?php echo htmlspecialchars($lang['article003-title'] ?? ''); ?>
+                                                </h4>
+                                                <p class="resume-block__header-meta">
+                                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
+                                                    <span><?php echo htmlspecialchars($lang['article003-description'] ?? ''); ?></span>
+                                                    <span class="resume-block__header-date">
+                                                        July 14<sup>th</sup>, 2025 - Present
+                                                    </span>
+                                                </p>
+                                        </div>
+
+                                        <p>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-citation-1'] ?? ''); ?>
+                                        </p>
+
+                                        <h4>
+                                            <?php echo htmlspecialchars($lang['article003-subtitle-1'] ?? ''); ?>
+                                        </h4>
+
+                                        <p>
+                                            <?php echo htmlspecialchars($lang['article003-CPU'] ?? ''); ?>
+                                            <br \>
+                                            <?php echo htmlspecialchars($lang['article003-GPU'] ?? ''); ?>
+                                            <br \>
+                                        </p>
 
                                     </div> <!-- end resume-block -->
                                 </div>
