@@ -1,6 +1,7 @@
 #chart-container {
-    width: 100%;
-    max-width: 900px;
+    width: 80%;
+    max-width: 80%;
+    height: 70%;
     margin: 40px auto;
     background: #e3f6fd;
     border-radius: 12px;
