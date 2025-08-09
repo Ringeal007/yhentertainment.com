@@ -515,7 +515,7 @@ if (!empty($config['site_start_date'])) {
                                 <p class="resume-block__header-meta">
                                     <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
                                     <span class="resume-block__header-date">
-                                        Aug 8<sup>th</sup>, 2025 - Present
+                                        Aug 10<sup>th</sup>, 2025 - Present
                                     </span>
                                 </p>
                             </div>
