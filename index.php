@@ -287,24 +287,30 @@ if (!empty($config['site_start_date'])) {
         <div class="row s-header__nav-wrap">
             <nav class="s-header__nav">
                 <ul>
-                    <li<?php if ($lang_code === 'zh-cn') echo ' class="current"'; ?>>
+                    <li<?php if ($lang_code === 'zh-cn')
+                        echo ' class="current"'; ?>>
                         <a href="?lang=zh-cn">简体中文</a>
-                    </li>
-                    <li<?php if ($lang_code === 'en') echo ' class="current"'; ?>>
-                        <a href="?lang=en">English</a>
-                    </li>
-                    <li<?php if ($lang_code === 'zh-tw') echo ' class="current"'; ?>>
-                        <a href="?lang=zh-tw">繁體中文</a>
-                    </li>
-                    <li<?php if ($lang_code === 'jp') echo ' class="current"'; ?>>
-                        <a href="?lang=jp">日本語</a>
-                    </li>
-                    <li<?php if ($lang_code === 'ru') echo ' class="current"'; ?>>
-                        <a href="?lang=ru">Русский</a>
-                    </li>
-                    <li<?php if ($lang_code === 'uy') echo ' class="current"'; ?>>
-                        <a href="?lang=uy">ئۇيغۇرچە</a>
-                    </li>
+                        </li>
+                        <li<?php if ($lang_code === 'en')
+                            echo ' class="current"'; ?>>
+                            <a href="?lang=en">English</a>
+                            </li>
+                            <li<?php if ($lang_code === 'zh-tw')
+                                echo ' class="current"'; ?>>
+                                <a href="?lang=zh-tw">繁體中文</a>
+                                </li>
+                                <li<?php if ($lang_code === 'jp')
+                                    echo ' class="current"'; ?>>
+                                    <a href="?lang=jp">日本語</a>
+                                    </li>
+                                    <li<?php if ($lang_code === 'ru')
+                                        echo ' class="current"'; ?>>
+                                        <a href="?lang=ru">Русский</a>
+                                        </li>
+                                        <li<?php if ($lang_code === 'uy')
+                                            echo ' class="current"'; ?>>
+                                            <a href="?lang=uy">ئۇيغۇرچە</a>
+                                            </li>
                 </ul>
             </nav>
         </div> <!-- end row -->
@@ -501,6 +507,35 @@ if (!empty($config['site_start_date'])) {
                     </div>
                     <div class="column large-9 tab-12">
                         <div class="resume-block">
+                            <!-- announcement-code 006 -->
+                            <div class="resume-block__header">
+                                <h4 class="h3">
+                                    <?php echo htmlspecialchars($lang['announcement006-title'] ?? ''); ?>
+                                </h4>
+                                <p class="resume-block__header-meta">
+                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
+                                    <span class="resume-block__header-date">
+                                        Aug 8<sup>th</sup>, 2025 - Present
+                                    </span>
+                                </p>
+                            </div>
+
+                            <ul>
+                                <h4><?php echo htmlspecialchars($lang['announcement006-text-1'] ?? ''); ?></h4>
+                                <li>
+                                    <?php echo htmlspecialchars($lang['announcement006-text-1-1'] ?? ''); ?><br \>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <h4><?php echo htmlspecialchars($lang['announcement006-text-2'] ?? ''); ?></h4>
+                                <li>
+                                    <?php echo htmlspecialchars($lang['announcement006-text-2-1'] ?? ''); ?><br \>
+                                </li>
+                            </ul>
+
+                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
+
                             <!-- announcement-code 005 -->
                             <div class="resume-block__header">
                                 <h4 class="h3">
@@ -1510,6 +1545,13 @@ if (!empty($config['site_start_date'])) {
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/statistics-chart.js"></script>
+        <script>
+            window.chartLang = {
+                daily: "<?php echo htmlspecialchars($lang['statistics-daily'] ?? '每日访问量'); ?>",
+                date: "<?php echo htmlspecialchars($lang['statistics-date'] ?? '日期'); ?>",
+                count: "<?php echo htmlspecialchars($lang['statistics-count'] ?? '访问人数'); ?>"
+            };
+        </script>
 
         <!-- 右侧目录导航 -->
         <nav id="side-toc">

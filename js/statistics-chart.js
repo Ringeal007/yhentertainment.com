@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         data: {
             labels: labels,
             datasets: [{
-                label: '每日访问量',
+                label: window.chartLang.daily,
                 data: dailyData,
                 fill: true,
                 backgroundColor: 'rgba(0,191,255,0.15)',
@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             scales: {
                 x: {
-                    title: { display: true, text: '日期' }
+                    title: { display: true, text: window.chartLang.date },
                 },
                 y: {
                     beginAtZero: true,
-                    title: { display: true, text: '访问人数' }
+                    title: { display: true, text: window.chartLang.count }
                 }
             },
             plugins: {
