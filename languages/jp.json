@@ -45,6 +45,7 @@
     "announcement006-title": "2025年8月10日更新ログ",
     "announcement006-text-1": "私はサイトに以下の更新を行いました：",
     "announcement006-text-1-1": "サイトアクセス折れ線グラフのすべての言語に対応しました。",
+    "announcement006-text-1-2": "IP-APIを使用して国コードの自動検出を実現し、その国に対応する言語パックを自動で使用するようにしました。（現在16の国または地域をカバー）",
     "announcement006-text-2": "今後の更新計画：",
     "announcement006-text-2-1": "記事専用のページを作成します。",
     "announcement005-title": "2025年8月8日更新ログ",

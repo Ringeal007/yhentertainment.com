@@ -54,6 +54,7 @@ switch ($country_code) {
         $lang_code = 'jp';
         break;
     case 'RU':
+    case 'UA':
         $lang_code = 'ru';
         break;
     default:
@@ -510,6 +511,9 @@ if (!empty($config['site_start_date'])) {
                                 <h4><?php echo htmlspecialchars($lang['announcement006-text-1'] ?? ''); ?></h4>
                                 <li>
                                     <?php echo htmlspecialchars($lang['announcement006-text-1-1'] ?? ''); ?><br \>
+                                </li>
+                                <li>
+                                    <?php echo htmlspecialchars($lang['announcement006-text-1-2'] ?? ''); ?><br \>
                                 </li>
                             </ul>
 

@@ -45,6 +45,7 @@
     "announcement006-title": "2025年8月10日更新日志",
     "announcement006-text-1": "我对网站进行了以下更新：",
     "announcement006-text-1-1": "对 网站访问量折线统计 进行了目前支持的所有语言适配。",
+    "announcement006-text-1-2": "使用 IP-API 实现了国家代码的自动检测并自动使用该国家对应的语言包。(目前覆盖16个国家或地区)",
     "announcement006-text-2": "后续更新计划：",
     "announcement006-text-2-1": "为 文章 单独创建一个专属页面。",
     "announcement005-title": "2025年8月8日更新日志",
