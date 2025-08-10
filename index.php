@@ -2,8 +2,6 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 $ip = $_SERVER['REMOTE_ADDR'];
-$json = @file_get_contents("http://ip-api.com/json/$ip");
-var_dump($json);//测试
 
 // 读取配置
 $config_file = __DIR__ . '/configuration.json';
@@ -108,11 +106,6 @@ if (!file_exists($lang_file)) {
     $lang_file = __DIR__ . "/languages/zh-cn.json";
 }
 $lang = json_decode(@file_get_contents($lang_file), true) ?? [];
-
-// 输出当前IP和属地（测试用）
-echo "你的IP: $ip<br>";
-echo "检测到国家: " . ($data['countryCode'] ?? '未知') . "<br>";
-echo "当前语言: $lang_code<br>";
 
 // 读取对应语言文件
 $lang_file = __DIR__ . "/languages/{$lang_code}.json";
