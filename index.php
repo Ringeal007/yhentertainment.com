@@ -1,6 +1,7 @@
 <?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
+$ip = $_SERVER['REMOTE_ADDR'];
 
 // 读取配置
 $config_file = __DIR__ . '/configuration.json';
