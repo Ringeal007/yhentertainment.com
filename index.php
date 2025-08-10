@@ -29,32 +29,32 @@ if ($data && $data['status'] === 'success') {
 
 // 根据国家代码匹配语言
 switch ($country_code) {
-    case 'US':
-    case 'CA':
-    case 'GB':
-    case 'AU':
-    case 'NZ':
-    case 'IE':
-    case 'SG':
-    case 'EN':
+    case 'US': // United States
+    case 'CA': // Canada
+    case 'GB': // United Kingdom
+    case 'AU': // Australia
+    case 'NZ': // New Zealand
+    case 'IE': // Ireland
+    case 'SG': // Singapore
+    case 'EN': // England
         $lang_code = 'en';
         break;
-    case 'TW':
-    case 'HK':
-    case 'MO':
+    case 'TW': // Taiwan
+    case 'HK': // Hong Kong
+    case 'MO': // Macau
         $lang_code = 'zh-tw';
         break;
-    case 'CN':
+    case 'CN': // China
         $lang_code = 'zh-cn';
         break;
-    case 'UY':
+    case 'UY': // *deleted* Uruguay
         $lang_code = 'uy';
         break;
-    case 'JP':
+    case 'JP': // Japan
         $lang_code = 'jp';
         break;
-    case 'RU':
-    case 'UA':
+    case 'RU': // Russia
+    case 'UA': // Ukraine
         $lang_code = 'ru';
         break;
     default:
