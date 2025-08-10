@@ -20,53 +20,60 @@ if (isset($_GET['lang'])) {
     switch ($lang) {
         case 'zh-cn':
             $lang_code = 'zh-cn';
-            setcookie('country_code', 'cn', time() + 3600 * 24 * 30, '/');
+            setcookie('country_code', 'CN', time() + 3600 * 24 * 30, '/');
             break;
         case 'en':
             $lang_code = 'en';
-            setcookie('country_code', 'us', time() + 3600 * 24 * 30, '/');
+            setcookie('country_code', 'EN', time() + 3600 * 24 * 30, '/');
             break;
         case 'zh-tw':
             $lang_code = 'zh-tw';
-            setcookie('country_code', 'tw', time() + 3600 * 24 * 30, '/');
+            setcookie('country_code', 'TW', time() + 3600 * 24 * 30, '/');
             break;
         case 'jp':
             $lang_code = 'jp';
-            setcookie('country_code', 'jp', time() + 3600 * 24 * 30, '/');
+            setcookie('country_code', 'JP', time() + 3600 * 24 * 30, '/');
             break;
-        case "ru":
+        case 'ru':
             $lang_code = 'ru';
-            setcookie('country_code', 'ru', time() + 3600 * 24 * 30, '/');
+            setcookie('country_code', 'RU', time() + 3600 * 24 * 30, '/');
             break;
-        case "uy":
+        case 'uy':
             $lang_code = 'uy';
-            setcookie('country_code', 'uy', time() + 3600 * 24 * 30, '/');
+            setcookie('country_code', 'UY', time() + 3600 * 24 * 30, '/');
             break;
         default:
             // keep default
             break;
     }
 } elseif (isset($_COOKIE['country_code'])) {
-    $country_code = strtolower($_COOKIE['country_code']);
+    $country_code = strtoupper($_COOKIE['country_code']);
     switch ($country_code) {
-        case 'us':
+        case 'US':
+        case 'CA':
+        case 'GB':
+        case 'AU':
+        case 'NZ':
+        case 'IE':
+        case 'SG':
+        case 'EN':
             $lang_code = 'en';
             break;
-        case 'tw':
-        case 'hk':
-        case 'mo':
+        case 'TW':
+        case 'HK':
+        case 'MO':
             $lang_code = 'zh-tw';
             break;
-        case 'cn':
+        case 'CN':
             $lang_code = 'zh-cn';
             break;
-        case 'uy':
+        case 'UY':
             $lang_code = 'uy';
             break;
-        case 'jp':
+        case 'JP':
             $lang_code = 'jp';
             break;
-        case "ru":
+        case 'RU':
             $lang_code = 'ru';
             break;
         default:
@@ -80,17 +87,27 @@ if (isset($_GET['lang'])) {
     $data = json_decode($json, true);
     if ($data && $data['status'] === 'success') {
         $country = strtoupper($data['countryCode']);
-        switch ($country) {
-            case 'CN':
-                $lang_code = 'zh-cn';
-                break;
+        switch ($country_code) {
             case 'US':
+            case 'CA':
+            case 'GB':
+            case 'AU':
+            case 'NZ':
+            case 'IE':
+            case 'SG':
+            case 'EN':
                 $lang_code = 'en';
                 break;
             case 'TW':
             case 'HK':
             case 'MO':
                 $lang_code = 'zh-tw';
+                break;
+            case 'CN':
+                $lang_code = 'zh-cn';
+                break;
+            case 'UY':
+                $lang_code = 'uy';
                 break;
             case 'JP':
                 $lang_code = 'jp';
@@ -99,7 +116,7 @@ if (isset($_GET['lang'])) {
                 $lang_code = 'ru';
                 break;
             default:
-                $lang_code = 'en';
+                // keep default
                 break;
         }
     } else {
