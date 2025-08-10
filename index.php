@@ -12,116 +12,94 @@ if (file_exists($config_file)) {
     $config = json_decode(file_get_contents($config_file), true);
 }
 
-// 语言代码自动检测，优先GET参数
-$lang_code = 'zh-cn'; // 默认
+// 默认语言
+$lang_code = 'zh-cn';
 
+// 1. 尝试使用 ip-api.com 检测国家代码
+$ip = $_SERVER['REMOTE_ADDR'];
+$json = @file_get_contents("http://ip-api.com/json/$ip");
+$data = json_decode($json, true);
+
+if ($data && $data['status'] === 'success') {
+    $country_code = strtoupper($data['countryCode']);
+} elseif (isset($_COOKIE['country_code'])) {
+    // 2. IP 检测失败，尝试使用 Cookie
+    $country_code = strtoupper($_COOKIE['country_code']);
+} else {
+    $country_code = ''; // 没有任何来源
+}
+
+// 根据国家代码匹配语言
+switch ($country_code) {
+    case 'US':
+    case 'CA':
+    case 'GB':
+    case 'AU':
+    case 'NZ':
+    case 'IE':
+    case 'SG':
+    case 'EN':
+        $lang_code = 'en';
+        break;
+    case 'TW':
+    case 'HK':
+    case 'MO':
+        $lang_code = 'zh-tw';
+        break;
+    case 'CN':
+        $lang_code = 'zh-cn';
+        break;
+    case 'UY':
+        $lang_code = 'uy';
+        break;
+    case 'JP':
+        $lang_code = 'jp';
+        break;
+    case 'RU':
+        $lang_code = 'ru';
+        break;
+    default:
+        $lang_code = 'zh-cn';
+        break;
+}
+
+// 3. 最后优先 GET 覆盖（如果有参数）
 if (isset($_GET['lang'])) {
     $lang = strtolower($_GET['lang']);
     switch ($lang) {
         case 'zh-cn':
             $lang_code = 'zh-cn';
-            setcookie('country_code', 'CN', time() + 3600 * 24 * 30, '/');
+            $country_code = 'CN';
             break;
         case 'en':
             $lang_code = 'en';
-            setcookie('country_code', 'EN', time() + 3600 * 24 * 30, '/');
+            $country_code = 'EN';
             break;
         case 'zh-tw':
             $lang_code = 'zh-tw';
-            setcookie('country_code', 'TW', time() + 3600 * 24 * 30, '/');
+            $country_code = 'TW';
             break;
         case 'jp':
             $lang_code = 'jp';
-            setcookie('country_code', 'JP', time() + 3600 * 24 * 30, '/');
+            $country_code = 'JP';
             break;
         case 'ru':
             $lang_code = 'ru';
-            setcookie('country_code', 'RU', time() + 3600 * 24 * 30, '/');
+            $country_code = 'RU';
             break;
         case 'uy':
             $lang_code = 'uy';
-            setcookie('country_code', 'UY', time() + 3600 * 24 * 30, '/');
+            $country_code = 'UY';
             break;
         default:
-            // keep default
+            // 无效参数则不变
             break;
     }
-} elseif (isset($_COOKIE['country_code'])) {
-    $country_code = strtoupper($_COOKIE['country_code']);
-    switch ($country_code) {
-        case 'US':
-        case 'CA':
-        case 'GB':
-        case 'AU':
-        case 'NZ':
-        case 'IE':
-        case 'SG':
-        case 'EN':
-            $lang_code = 'en';
-            break;
-        case 'TW':
-        case 'HK':
-        case 'MO':
-            $lang_code = 'zh-tw';
-            break;
-        case 'CN':
-            $lang_code = 'zh-cn';
-            break;
-        case 'UY':
-            $lang_code = 'uy';
-            break;
-        case 'JP':
-            $lang_code = 'jp';
-            break;
-        case 'RU':
-            $lang_code = 'ru';
-            break;
-        default:
-            // keep default
-            break;
-    }
-} else {
-    // 使用 ip-api.com 检测国家代码
-    $ip = $_SERVER['REMOTE_ADDR'];
-    $json = @file_get_contents("http://ip-api.com/json/$ip");
-    $data = json_decode($json, true);
-    if ($data && $data['status'] === 'success') {
-        $country = strtoupper($data['countryCode']);
-        switch ($country_code) {
-            case 'US':
-            case 'CA':
-            case 'GB':
-            case 'AU':
-            case 'NZ':
-            case 'IE':
-            case 'SG':
-            case 'EN':
-                $lang_code = 'en';
-                break;
-            case 'TW':
-            case 'HK':
-            case 'MO':
-                $lang_code = 'zh-tw';
-                break;
-            case 'CN':
-                $lang_code = 'zh-cn';
-                break;
-            case 'UY':
-                $lang_code = 'uy';
-                break;
-            case 'JP':
-                $lang_code = 'jp';
-                break;
-            case 'RU':
-                $lang_code = 'ru';
-                break;
-            default:
-                // keep default
-                break;
-        }
-    } else {
-        $lang_code = 'zh-cn';
-    }
+}
+
+// 保存国家代码到 Cookie
+if (!empty($country_code)) {
+    setcookie('country_code', $country_code, time() + 3600 * 24 * 30, '/');
 }
 
 // 加载语言包
