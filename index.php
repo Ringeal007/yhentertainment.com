@@ -2,6 +2,8 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 $ip = $_SERVER['REMOTE_ADDR'];
+$json = @file_get_contents("http://ip-api.com/json/8.8.8.8");
+var_dump($json);//测试
 
 // 读取配置
 $config_file = __DIR__ . '/configuration.json';
