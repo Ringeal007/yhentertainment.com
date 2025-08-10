@@ -71,55 +71,50 @@ if (isset($_GET['lang'])) {
             break;
     }
 } else {
-    function getUserIP()
-    {
-        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-            return $_SERVER['HTTP_CLIENT_IP'];
-        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-            return explode(',', $_SERVER['HTTP_X_FORWARDED_FOR'])[0];
-        } else {
-            return $_SERVER['REMOTE_ADDR'];
+    // 使用 ip-api.com 检测国家代码
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $json = @file_get_contents("http://ip-api.com/json/$ip");
+    $data = json_decode($json, true);
+    if ($data && $data['status'] === 'success') {
+        $country = strtoupper($data['countryCode']);
+        switch ($country) {
+            case 'CN':
+                $lang_code = 'zh-cn';
+                break;
+            case 'US':
+                $lang_code = 'en';
+                break;
+            case 'TW':
+            case 'HK':
+            case 'MO':
+                $lang_code = 'zh-tw';
+                break;
+            case 'JP':
+                $lang_code = 'jp';
+                break;
+            case 'RU':
+                $lang_code = 'ru';
+                break;
+            default:
+                $lang_code = 'en';
+                break;
         }
+    } else {
+        $lang_code = 'zh-cn';
     }
-
-    function detectLangByIP($ip)
-    {
-        if ($ip === '127.0.0.1' || $ip === '::1') {
-            return 'zh-cn';
-        }
-        $url = "https://v.api.aa1.cn/api/chinaip/?ip=" . urlencode($ip);
-        $response = @file_get_contents($url);
-        if ($response !== false) {
-            if (preg_match('/<body[^>]*>(.*?)<\/body>/is', $response, $matches)) {
-                $json = trim($matches[1]);
-                $data = json_decode($json, true);
-                if (isset($data['data']['Cc_Code'])) {
-                    $cc = strtoupper($data['data']['Cc_Code']);
-                    switch ($cc) {
-                        case 'CN':
-                            return 'zh-cn';
-                        case 'US':
-                            return 'en';
-                        case 'TW':
-                        case 'HK':
-                        case 'MO':
-                            return 'zh-tw';
-                        case 'JP':
-                            return 'jp';
-                        case 'RU':
-                            return 'ru';
-                        default:
-                            return 'en';
-                    }
-                }
-            }
-        }
-        return 'zh-cn';
-    }
-
-    $ip = getUserIP();
-    $lang_code = detectLangByIP($ip);
 }
+
+// 加载语言包
+$lang_file = __DIR__ . "/languages/{$lang_code}.json";
+if (!file_exists($lang_file)) {
+    $lang_file = __DIR__ . "/languages/zh-cn.json";
+}
+$lang = json_decode(@file_get_contents($lang_file), true) ?? [];
+
+// 输出当前IP和属地（测试用）
+echo "你的IP: $ip<br>";
+echo "检测到国家: " . ($data['country'] ?? '未知') . "<br>";
+echo "当前语言: $lang_code<br>";
 
 // 读取对应语言文件
 $lang_file = __DIR__ . "/languages/{$lang_code}.json";
