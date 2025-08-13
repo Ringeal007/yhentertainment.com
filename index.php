@@ -47,9 +47,6 @@ switch ($country_code) {
     case 'CN': // China
         $lang_code = 'zh-cn';
         break;
-    case 'UY': // *deleted* Uruguay
-        $lang_code = 'uy';
-        break;
     case 'JP': // Japan
         $lang_code = 'jp';
         break;
@@ -85,10 +82,6 @@ if (isset($_GET['lang'])) {
         case 'ru':
             $lang_code = 'ru';
             $country_code = 'RU';
-            break;
-        case 'uy':
-            $lang_code = 'uy';
-            $country_code = 'UY';
             break;
         default:
             // 无效参数则不变
@@ -219,6 +212,16 @@ if (!empty($config['site_start_date'])) {
 <html class="no-js" lang="<?php echo htmlspecialchars($lang_code); ?>">
 
 <head>
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6RQ021S8W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-J6RQ021S8W');
+    </script>
 
     <!--- basic page needs
         ================================================== -->
@@ -294,10 +297,6 @@ if (!empty($config['site_start_date'])) {
                                         echo ' class="current"'; ?>>
                                         <a href="?lang=ru">Русский</a>
                                         </li>
-                                        <li<?php if ($lang_code === 'uy')
-                                            echo ' class="current"'; ?>>
-                                            <a href="?lang=uy">ئۇيغۇرچە</a>
-                                            </li>
                 </ul>
             </nav>
         </div> <!-- end row -->
@@ -494,6 +493,29 @@ if (!empty($config['site_start_date'])) {
                     </div>
                     <div class="column large-9 tab-12">
                         <div class="resume-block">
+                            <!-- announcement-code 006 -->
+                            <div class="resume-block__header">
+                                <h4 class="h3">
+                                    <?php echo htmlspecialchars($lang['announcement007-title'] ?? ''); ?>
+                                </h4>
+                                <p class="resume-block__header-meta">
+                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
+                                    <span class="resume-block__header-date">
+                                        Aug 13<sup>th</sup>, 2025 - Present
+                                    </span>
+                                </p>
+                            </div>
+
+                            <ul>
+                                <h4><?php echo htmlspecialchars($lang['announcement007-text-1'] ?? ''); ?></h4>
+                                <li>
+                                    <?php echo htmlspecialchars($lang['announcement007-text-1-1'] ?? ''); ?><br \>
+                                </li>
+                                <li><?php echo htmlspecialchars($lang['announcement007-text-1-2'] ?? ''); ?></li>
+                            </ul>
+
+                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
+
                             <!-- announcement-code 006 -->
                             <div class="resume-block__header">
                                 <h4 class="h3">
@@ -1114,6 +1136,64 @@ if (!empty($config['site_start_date'])) {
                                                     <li><?php echo htmlspecialchars($lang['article003-Mb-5-7'] ?? ''); ?>
                                                     </li>
                                                 </ul>
+                                                <blockquote>
+                                                    <?php echo htmlspecialchars($lang['article003-RAM'] ?? ''); ?>
+                                                </blockquote>
+                                                <ul>
+                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-RAM-1'] ?? ''); ?>
+                                                    <br><br>
+                                                    <p style="font-weight: bold">
+                                                        <?php echo htmlspecialchars($lang['article003-RAM-2'] ?? ''); ?>
+                                                    </p>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-2-1'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-2-2'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-2-3'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-2-4'] ?? ''); ?>
+                                                    </li>
+                                                    <br><br>
+                                                    <p style="font-weight: bold">
+                                                        <?php echo htmlspecialchars($lang['article003-RAM-3'] ?? ''); ?>
+                                                    </p>
+                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-RAM-3-1'] ?? ''); ?>
+                                                    <br \>
+                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-RAM-3-2'] ?? ''); ?>
+                                                    <br><br>
+                                                    <p style="font-weight: bold">
+                                                        <?php echo htmlspecialchars($lang['article003-RAM-4'] ?? ''); ?>
+                                                    </p>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-1'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-2'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-3'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-4'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-5'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-6'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-7'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-8'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-9'] ?? ''); ?>
+                                                    </li>
+                                                    <br><br>
+                                                    <p style="font-weight: bold">
+                                                        <?php echo htmlspecialchars($lang['article003-RAM-5'] ?? ''); ?>
+                                                    </p>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-5-1'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-5-2'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-5-3'] ?? ''); ?>
+                                                    </li>
+
+                                                </ul>
                                                 <h3 style="text-align: center;">
                                                     <?php echo htmlspecialchars($lang['to-be-continued'] ?? ''); ?>
                                                 </h3>
@@ -1214,10 +1294,6 @@ if (!empty($config['site_start_date'])) {
                                                     <li>
                                                         <div class="progress percent5"></div>
                                                         <strong>한국어/republic of korea</strong>
-                                                    </li>
-                                                    <li>
-                                                        <div class="progress percent65"></div>
-                                                        <strong>uygur/xinjiang, PRC</strong>
                                                     </li>
                                                 </ul>
 
