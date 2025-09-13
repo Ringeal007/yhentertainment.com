@@ -493,7 +493,29 @@ if (!empty($config['site_start_date'])) {
                     </div>
                     <div class="column large-9 tab-12">
                         <div class="resume-block">
-                            <!-- announcement-code 006 -->
+                            <!-- announcement-code 008 -->
+                            <div class="resume-block__header">
+                                <h4 class="h3">
+                                    <?php echo htmlspecialchars($lang['announcement008-title'] ?? ''); ?>
+                                </h4>
+                                <p class="resume-block__header-meta">
+                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
+                                    <span class="resume-block__header-date">
+                                        Sep 14<sup>th</sup>, 2025 - Present
+                                    </span>
+                                </p>
+                            </div>
+
+                            <ul>
+                                <h4><?php echo htmlspecialchars($lang['announcement008-text-1'] ?? ''); ?></h4>
+                                <li>
+                                    <?php echo htmlspecialchars($lang['announcement008-text-2'] ?? ''); ?><br \>
+                                </li>
+                            </ul>
+
+                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
+
+                            <!-- announcement-code 007 -->
                             <div class="resume-block__header">
                                 <h4 class="h3">
                                     <?php echo htmlspecialchars($lang['announcement007-title'] ?? ''); ?>
@@ -1245,6 +1267,36 @@ if (!empty($config['site_start_date'])) {
                                                 <br \>
                                                 <?php echo htmlspecialchars($lang['voident-game-product2'] ?? ''); ?>
                                             </p>
+
+                                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
+
+                                            <div class="resume-block">
+
+                                                <div class="resume-block__header">
+                                                    <h4 class="h3">简单主页 | Simple Mainpage</h4>
+                                                    <p class="resume-block__header-meta">
+                                                        <span><?php echo htmlspecialchars($lang['simple-mainpage'] ?? ''); ?></span>
+                                                        <span class="resume-block__header-date">
+                                                            Established in "UNKNOWABLE"
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <p>
+                                                    <?php echo htmlspecialchars($lang['simple-mainpage-description-1'] ?? ''); ?>
+                                                </p>
+                                                <p>
+                                                    <?php echo htmlspecialchars($lang['simple-mainpage-description-2'] ?? ''); ?>
+                                                </p>
+                                                <p>
+                                                    <?php echo htmlspecialchars($lang['simple-mainpage-description-3'] ?? ''); ?>
+                                                </p>
+                                                <p>
+                                                    <?php echo htmlspecialchars(($lang['simple-mainpage-link'] ?? '')); ?> 
+                                                    <a href="https://github.com/MFn233/PCL-Mainpage" title="Simple Mainpage 的 GitHub 仓库地址">https://github.com/MFn233/PCL-Mainpage</a>
+                                                </p>
+
+                                            </div> <!-- end resume-block -->
 
                                         </div> <!-- end resume-block -->
                                     </div>
