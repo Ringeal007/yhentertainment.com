@@ -473,222 +473,221 @@ if (!empty($config['site_start_date'])) {
                             <?php echo htmlspecialchars($lang['post001-text'] ?? ''); ?>
                         </p>
 
-                    </div> <!-- post-section -->
+                    </div> <!-- end resume-block -->
 
                 </div>
             </div> <!-- s-resume__section -->
+        </section> <!-- end post -->
 
-            <section id="utilities">
-                <div class="row s-resume__section">
-                    <div class="column large-3 tab-12">
-                        <h3 class="section-header-allcaps">Utilities</h3>
-                    </div>
-                    <div class="column large-9 tab-12">
+        <section id="utilities">
+            <div class="row s-resume__section">
+                <div class="column large-3 tab-12">
+                    <h3 class="section-header-allcaps">Utilities</h3>
+                </div>
+                <div class="column large-9 tab-12">
+                    <div class="resume-block">
+                        <!-- utilities 001 -->
+                        <div class="resume-block__header">
+                            <h4 class="h3">
+                                <?php echo htmlspecialchars($lang['utilities001-title'] ?? ''); ?>
+                            </h4>
+                            <p class="resume-block__header-meta">
+                                <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
+                                <span class="resume-block__header-date">
+                                    June 18<sup>th</sup>, 2025 - Present
+                                </span>
+                            </p>
+                        </div>
+
+                        <p>
+                            &emsp;&emsp;<?php echo htmlspecialchars($lang['utilities001-description'] ?? ''); ?><br \>
+                        <blockquote>
+                            <ul>
+                                <li>
+                                    <a href="https://store.steampowered.com/" title="Steam主页"
+                                        style="text-shadow: 0 0 3px #000; color: snow;"><i class="fab fa-steam"
+                                            aria-hidden="true"></i></a>
+                                    <a href="https://store.steampowered.com/"
+                                        style="text-shadow: 0 0 3px #000; color: snow;">
+                                        <?php echo htmlspecialchars($lang['utilities001-steam'] ?? ''); ?>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.runoob.com/" style="text-shadow: 0 0 3px #000; color: snow;">
+                                        <?php echo htmlspecialchars($lang['utilities001-runoob'] ?? ''); ?>
+                                    </a>
+                                </li>
+                            </ul>
+                        </blockquote>
+                        </p>
+
+
+                    </div> <!-- end resume-block -->
+                </div>
+
+            </div>
+        </section> <!-- end utilities -->
+
+        <section id="partnership">
+            <div class="row s-resume__section">
+                <div class="column large-3 tab-12">
+                    <h3 class="section-header-allcaps">partnership</h3>
+                </div>
+                <div class="column large-9 tab-12">
+                    <div class="resume-block">
+
+                        <div class="resume-block__header">
+                            <h4 class="h3">Voident_Game</h4>
+                            <p class="resume-block__header-meta">
+                                <span><?php echo htmlspecialchars($lang['voident-game'] ?? ''); ?></span>
+                                <span class="resume-block__header-date">
+                                    Established in Jun, 2022
+                                </span>
+                            </p>
+                        </div>
+
+                        <p>
+                            <?php echo htmlspecialchars($lang['voident-game-description'] ?? ''); ?>
+                        </p>
+
+                    </div> <!-- end resume-block -->
+
+                    <div class="resume-block">
+
+                        <div class="resume-block__header">
+                            <h4 class="h4">
+                                <?php echo htmlspecialchars($lang['voident-game-about'] ?? ''); ?>
+                            </h4>
+                            <p class="resume-block__header-meta">
+                                <span><?php echo htmlspecialchars($lang['voident-game'] ?? ''); ?></span>
+                                <span class="resume-block__header-date">
+                                    Established in Jun, 2022
+                                </span>
+                            </p>
+                        </div>
+
+                        <p>
+                            <?php echo htmlspecialchars($lang['voident-game-product1'] ?? ''); ?>
+                            <br \>
+                            <?php echo htmlspecialchars($lang['voident-game-product2'] ?? ''); ?>
+                        </p>
+
+                        <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
+
                         <div class="resume-block">
-                            <!-- utilities 001 -->
+
                             <div class="resume-block__header">
-                                <h4 class="h3">
-                                    <?php echo htmlspecialchars($lang['utilities001-title'] ?? ''); ?>
-                                </h4>
+                                <h4 class="h3">简单主页 | Simple Mainpage</h4>
                                 <p class="resume-block__header-meta">
-                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
+                                    <span><?php echo htmlspecialchars($lang['simple-mainpage'] ?? ''); ?></span>
                                     <span class="resume-block__header-date">
-                                        June 18<sup>th</sup>, 2025 - Present
+                                        Established in "UNKNOWABLE"
                                     </span>
                                 </p>
                             </div>
 
                             <p>
-                                &emsp;&emsp;<?php echo htmlspecialchars($lang['utilities001-description'] ?? ''); ?><br \>
-                            <blockquote>
-                                <ul>
-                                    <li>
-                                        <a href="https://store.steampowered.com/" title="Steam主页"
-                                            style="text-shadow: 0 0 3px #000; color: snow;"><i class="fab fa-steam"
-                                                aria-hidden="true"></i></a>
-                                        <a href="https://store.steampowered.com/"
-                                            style="text-shadow: 0 0 3px #000; color: snow;">
-                                            <?php echo htmlspecialchars($lang['utilities001-steam'] ?? ''); ?>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.runoob.com/" style="text-shadow: 0 0 3px #000; color: snow;">
-                                            <?php echo htmlspecialchars($lang['utilities001-runoob'] ?? ''); ?>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </blockquote>
+                                <?php echo htmlspecialchars($lang['simple-mainpage-description-1'] ?? ''); ?>
+                            </p>
+                            <p>
+                                <?php echo htmlspecialchars($lang['simple-mainpage-description-2'] ?? ''); ?>
+                            </p>
+                            <p>
+                                <?php echo htmlspecialchars($lang['simple-mainpage-description-3'] ?? ''); ?>
+                            </p>
+                            <p>
+                                <?php echo htmlspecialchars(($lang['simple-mainpage-link'] ?? '')); ?>
+                                <a href="https://github.com/MFn233/PCL-Mainpage"
+                                    title="Simple Mainpage 的 GitHub 仓库地址">https://github.com/MFn233/PCL-Mainpage</a>
                             </p>
 
-
                         </div> <!-- end resume-block -->
-                    </div>
+
+                    </div> <!-- end resume-block -->
+                </div>
+            </div> <!-- s-resume__section -->
+        </section> <!-- end partnership -->
+
+        <section id="friendship">
+            <div class="row s-resume__section">
+                <div class="column large-3 tab-12">
+                    <h3 class="section-header-allcaps">friendship</h3>
+                </div>
+                <div class="column large-9 tab-12">
+                    <div class="resume-block">
+
+                        <div class="resume-block__header">
+                            <h4 class="h3"><a href="https://ringeal007.netlify.app">Ringeal007</a></h4>
+                            <p class="resume-block__header-meta">
+                                <span><?php echo htmlspecialchars($lang['ringeal007'] ?? ''); ?></span>
+                                <span class="resume-block__header-date">
+                                    Added in Mar 12<sup>th</sup>, 2026
+                                </span>
+                            </p>
+                        </div>
+
+                        <p>
+                            <?php echo htmlspecialchars($lang['ringeal007-description'] ?? ''); ?>
+                        </p>
+
+                    </div> <!-- end resume-block -->
+                </div>
+            </div> <!-- s-resume__section -->
+        </section> <!-- end friendship -->
+
+        <section id="language">
+            <div class="row s-resume__section">
+                <div class="column large-3 tab-12">
+                    <h3 class="section-header-allcaps">language<br \>localization</h3>
+                </div>
+                <div class="column large-9 tab-12">
+                    <div class="resume-block">
+
+                        <p>
+                            <?php echo htmlspecialchars($lang['translation-description'] ?? ''); ?>
+                        </p>
+
+                        <ul class="skill-bars-fat">
+                            <li>
+                                <div class="progress percent100"></div>
+                                <strong>
+                                    简体中文/people's republic of china
+                                </strong>
+                            </li>
+                            <li>
+                                <div class="progress percent90"></div>
+                                <strong>繁體中文/hong kong, taiwan, macau (PRC)</strong>
+                            </li>
+                            <li>
+                                <div class="progress percent85"></div>
+                                <strong>
+                                    english/united states
+                                </strong>
+                            </li>
+                            <li>
+                                <div class="progress percent75"></div>
+                                <strong>Русский язык/russian federation</strong>
+                            </li>
+                            <li>
+                                <div class="progress percent5"></div>
+                                <strong>Deutsch/germany</strong>
+                            </li>
+                            <li>
+                                <div class="progress percent75"></div>
+                                <strong>日本語/japan</strong>
+                            </li>
+                            <li>
+                                <div class="progress percent5"></div>
+                                <strong>한국어/republic of korea</strong>
+                            </li>
+                        </ul>
+
+                    </div> <!-- end resume-block -->
 
                 </div>
+            </div> <!-- s-resume__section -->
+        </section> <!-- end language -->
 
-                <section id="partnership">
-                    <div class="row s-resume__section">
-                        <div class="column large-3 tab-12">
-                            <h3 class="section-header-allcaps">partnership</h3>
-                        </div>
-                        <div class="column large-9 tab-12">
-                            <div class="resume-block">
-
-                                <div class="resume-block__header">
-                                    <h4 class="h3">Voident_Game</h4>
-                                    <p class="resume-block__header-meta">
-                                        <span><?php echo htmlspecialchars($lang['voident-game'] ?? ''); ?></span>
-                                        <span class="resume-block__header-date">
-                                            Established in Jun, 2022
-                                        </span>
-                                    </p>
-                                </div>
-
-                                <p>
-                                    <?php echo htmlspecialchars($lang['voident-game-description'] ?? ''); ?>
-                                </p>
-
-                            </div> <!-- end resume-block -->
-
-                            <div class="resume-block">
-
-                                <div class="resume-block__header">
-                                    <h4 class="h4">
-                                        <?php echo htmlspecialchars($lang['voident-game-about'] ?? ''); ?>
-                                    </h4>
-                                    <p class="resume-block__header-meta">
-                                        <span><?php echo htmlspecialchars($lang['voident-game'] ?? ''); ?></span>
-                                        <span class="resume-block__header-date">
-                                            Established in Jun, 2022
-                                        </span>
-                                    </p>
-                                </div>
-
-                                <p>
-                                    <?php echo htmlspecialchars($lang['voident-game-product1'] ?? ''); ?>
-                                    <br \>
-                                    <?php echo htmlspecialchars($lang['voident-game-product2'] ?? ''); ?>
-                                </p>
-
-                                <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
-
-                                <div class="resume-block">
-
-                                    <div class="resume-block__header">
-                                        <h4 class="h3">简单主页 | Simple Mainpage</h4>
-                                        <p class="resume-block__header-meta">
-                                            <span><?php echo htmlspecialchars($lang['simple-mainpage'] ?? ''); ?></span>
-                                            <span class="resume-block__header-date">
-                                                Established in "UNKNOWABLE"
-                                            </span>
-                                        </p>
-                                    </div>
-
-                                    <p>
-                                        <?php echo htmlspecialchars($lang['simple-mainpage-description-1'] ?? ''); ?>
-                                    </p>
-                                    <p>
-                                        <?php echo htmlspecialchars($lang['simple-mainpage-description-2'] ?? ''); ?>
-                                    </p>
-                                    <p>
-                                        <?php echo htmlspecialchars($lang['simple-mainpage-description-3'] ?? ''); ?>
-                                    </p>
-                                    <p>
-                                        <?php echo htmlspecialchars(($lang['simple-mainpage-link'] ?? '')); ?>
-                                        <a href="https://github.com/MFn233/PCL-Mainpage"
-                                            title="Simple Mainpage 的 GitHub 仓库地址">https://github.com/MFn233/PCL-Mainpage</a>
-                                    </p>
-
-                                </div> <!-- end resume-block -->
-
-                            </div> <!-- end resume-block -->
-                        </div>
-                    </div> <!-- s-resume__section -->
-
-                    <section id="friendship">
-                        <div class="row s-resume__section">
-                            <div class="column large-3 tab-12">
-                                <h3 class="section-header-allcaps">friendship</h3>
-                            </div>
-                            <div class="column large-9 tab-12">
-                                <div class="resume-block">
-
-                                    <div class="resume-block__header">
-                                        <h4 class="h3"><a href="https://ringeal007.netlify.app">Ringeal007</a></h4>
-                                        <p class="resume-block__header-meta">
-                                            <span><?php echo htmlspecialchars($lang['ringeal007'] ?? ''); ?></span>
-                                            <span class="resume-block__header-date">
-                                                Added in Mar 12<sup>th</sup>, 2026
-                                            </span>
-                                        </p>
-                                    </div>
-
-                                    <p>
-                                        <?php echo htmlspecialchars($lang['ringeal007-description'] ?? ''); ?>
-                                    </p>
-
-                                </div> <!-- end resume-block -->
-                            </div>
-                        </div> <!-- s-resume__section -->
-
-
-                        <section id="language">
-                            <div class="row s-resume__section">
-                                <div class="column large-3 tab-12">
-                                    <h3 class="section-header-allcaps">language<br \>localization</h3>
-                                </div>
-                                <div class="column large-9 tab-12">
-                                    <div class="resume-block">
-
-                                        <p>
-                                            <?php echo htmlspecialchars($lang['translation-description'] ?? ''); ?>
-                                        </p>
-
-                                        <ul class="skill-bars-fat">
-                                            <li>
-                                                <div class="progress percent100"></div>
-                                                <strong>
-                                                    简体中文/people's republic of china
-                                                </strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent90"></div>
-                                                <strong>繁體中文/hong kong, taiwan, macau (PRC)</strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent85"></div>
-                                                <strong>
-                                                    english/united states
-                                                </strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent75"></div>
-                                                <strong>Русский язык/russian federation</strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent5"></div>
-                                                <strong>Deutsch/germany</strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent75"></div>
-                                                <strong>日本語/japan</strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent5"></div>
-                                                <strong>한국어/republic of korea</strong>
-                                            </li>
-                                        </ul>
-
-                                    </div> <!-- end resume-block -->
-
-                                </div>
-                            </div> <!-- s-resume__section -->
-
-                        </section> <!-- end s-resume -->
-                    </section> <!-- end friendship -->
-                </section> <!-- end partnership -->
-            </section> <!-- end utilities -->
-        </section> <!-- end post -->
     </div> <!-- end main -->
 
 
