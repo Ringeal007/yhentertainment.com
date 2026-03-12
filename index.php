@@ -410,7 +410,7 @@ if (!empty($config['site_start_date'])) {
     </section> <!-- end s-about -->
 
     <div id="main">
-        <section id="vote" class="s-resume target-section"></section>
+    <section id="vote" class="s-resume target-section">
             <!-- post-section -->
             <section id="statistics"></section>
 
