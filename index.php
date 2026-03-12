@@ -410,7 +410,7 @@ if (!empty($config['site_start_date'])) {
     </section> <!-- end s-about -->
 
     <div id="main">
-    <section id="vote" class="s-resume target-section">
+        <section id="vote" class="s-resume target-section">
             <!-- post-section -->
             <section id="statistics"></section>
 
@@ -431,274 +431,117 @@ if (!empty($config['site_start_date'])) {
                 </div>
             </div>
 
-            <section id="announcement">
+            <section id="post">
+
                 <div class="row s-resume__section">
                     <div class="column large-3 tab-12">
-                        <h3 class="section-header-allcaps">announcement</h3>
+                        <h3 class="section-header-allcaps">post</h3>
                     </div>
                     <div class="column large-9 tab-12">
                         <div class="resume-block">
-                            <!-- announcement-code 008 -->
+
                             <div class="resume-block__header">
-                                <h4 class="h3">
-                                    <?php echo htmlspecialchars($lang['announcement008-title'] ?? ''); ?>
+                                <h4 class="h3"><?php echo htmlspecialchars($lang['post002-title'] ?? ''); ?>
                                 </h4>
                                 <p class="resume-block__header-meta">
-                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
+                                    <span>Entertainment_YH</span>
                                     <span class="resume-block__header-date">
-                                        Sep 14<sup>th</sup>, 2025 - Present
-                                    </span>
-                                </p>
-                            </div>
-
-                            <ul>
-                                <h4><?php echo htmlspecialchars($lang['announcement008-text-1'] ?? ''); ?></h4>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement008-text-2'] ?? ''); ?><br \>
-                                </li>
-                            </ul>
-
-                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
-
-                            <!-- announcement-code 007 -->
-                            <div class="resume-block__header">
-                                <h4 class="h3">
-                                    <?php echo htmlspecialchars($lang['announcement007-title'] ?? ''); ?>
-                                </h4>
-                                <p class="resume-block__header-meta">
-                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
-                                    <span class="resume-block__header-date">
-                                        Aug 13<sup>th</sup>, 2025 - Present
-                                    </span>
-                                </p>
-                            </div>
-
-                            <ul>
-                                <h4><?php echo htmlspecialchars($lang['announcement007-text-1'] ?? ''); ?></h4>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement007-text-1-1'] ?? ''); ?><br \>
-                                </li>
-                                <li><?php echo htmlspecialchars($lang['announcement007-text-1-2'] ?? ''); ?></li>
-                            </ul>
-
-                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
-
-                            <!-- announcement-code 006 -->
-                            <div class="resume-block__header">
-                                <h4 class="h3">
-                                    <?php echo htmlspecialchars($lang['announcement006-title'] ?? ''); ?>
-                                </h4>
-                                <p class="resume-block__header-meta">
-                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
-                                    <span class="resume-block__header-date">
-                                        Aug 10<sup>th</sup>, 2025 - Present
-                                    </span>
-                                </p>
-                            </div>
-
-                            <ul>
-                                <h4><?php echo htmlspecialchars($lang['announcement006-text-1'] ?? ''); ?></h4>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement006-text-1-1'] ?? ''); ?><br \>
-                                </li>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement006-text-1-2'] ?? ''); ?><br \>
-                                </li>
-                            </ul>
-
-                            <ul>
-                                <h4><?php echo htmlspecialchars($lang['announcement006-text-2'] ?? ''); ?></h4>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement006-text-2-1'] ?? ''); ?><br \>
-                                </li>
-                            </ul>
-
-                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
-
-                            <!-- announcement-code 005 -->
-                            <div class="resume-block__header">
-                                <h4 class="h3">
-                                    <?php echo htmlspecialchars($lang['announcement005-title'] ?? ''); ?>
-                                </h4>
-                                <p class="resume-block__header-meta">
-                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
-                                    <span class="resume-block__header-date">
-                                        Aug 8<sup>th</sup>, 2025 - Present
-                                    </span>
-                                </p>
-                            </div>
-
-                            <ul>
-                                <h4><?php echo htmlspecialchars($lang['announcement005-text-1'] ?? ''); ?></h4>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement005-text-1-1'] ?? ''); ?><br \>
-                                </li>
-                            </ul>
-
-                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
-
-                            <!-- announcement-code 004 -->
-                            <div class="resume-block__header">
-                                <h4 class="h3">
-                                    <?php echo htmlspecialchars($lang['announcement004-title'] ?? ''); ?>
-                                </h4>
-                                <p class="resume-block__header-meta">
-                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
-                                    <span class="resume-block__header-date">
-                                        Aug 8<sup>th</sup>, 2025 - Present
-                                    </span>
-                                </p>
-                            </div>
-
-                            <p><?php echo htmlspecialchars($lang['announcement004-text'] ?? ''); ?></p>
-
-                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
-
-                            <!-- announcement-code 003 -->
-                            <div class="resume-block__header">
-                                <h4 class="h3">
-                                    <?php echo htmlspecialchars($lang['announcement003-title'] ?? ''); ?>
-                                </h4>
-                                <p class="resume-block__header-meta">
-                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
-                                    <span class="resume-block__header-date">
-                                        Aug 7<sup>th</sup>, 2025 - Present
-                                    </span>
-                                </p>
-                            </div>
-
-                            <ul>
-                                <h4><?php echo htmlspecialchars($lang['announcement003-text-1'] ?? ''); ?></h4>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement003-text-1-1'] ?? ''); ?><br \>
-                                </li>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement003-text-1-2'] ?? ''); ?><br \>
-                                </li>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement003-text-1-3'] ?? ''); ?><br \><br \>
-                                </li>
-                                <h4><?php echo htmlspecialchars($lang['announcement003-text-2'] ?? ''); ?></h4>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement003-text-2-1'] ?? ''); ?><br \>
-                                </li>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement003-text-2-2'] ?? ''); ?><br \>
-                                </li>
-                            </ul>
-
-                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
-
-                            <!-- announcement-code 002 -->
-                            <div class="resume-block__header">
-                                <h4 class="h3">
-                                    <?php echo htmlspecialchars($lang['announcement002-title'] ?? ''); ?>
-                                </h4>
-                                <p class="resume-block__header-meta">
-                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
-                                    <span class="resume-block__header-date">
-                                        May 30<sup>th</sup>, 2025 - Present
+                                        Published on May 23<sup>th</sup>, 2025
                                     </span>
                                 </p>
                             </div>
 
                             <p>
-                                &emsp;&emsp;<?php echo htmlspecialchars($lang['announcement002-text'] ?? ''); ?><br \>
+                                <?php echo htmlspecialchars($lang['post002-text'] ?? ''); ?>
                             </p>
 
                             <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
 
-                            <!-- announcement-code 001 -->
                             <div class="resume-block__header">
-                                <h4 class="h3">
-                                    <?php echo htmlspecialchars($lang['announcement001-title'] ?? ''); ?>
+                                <h4 class="h3"><?php echo htmlspecialchars($lang['post001-title'] ?? ''); ?>
                                 </h4>
                                 <p class="resume-block__header-meta">
-                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
+                                    <span>Entertainment_YH</span>
                                     <span class="resume-block__header-date">
-                                        May 11<sup>th</sup>, 2025 - Present
+                                        Published on May 17<sup>th</sup>, 2025
                                     </span>
                                 </p>
                             </div>
 
                             <p>
-                            <ul>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement001-text-1'] ?? ''); ?>
-                                </li>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement001-text-2'] ?? ''); ?>
-                                </li>
-                                <li>
-                                    <?php echo htmlspecialchars($lang['announcement001-text-3'] ?? ''); ?>
-                                </li>
-                            </ul>
+                                <?php echo htmlspecialchars($lang['post001-text'] ?? ''); ?>
                             </p>
 
-                        </div> <!-- end resume-block -->
+                        </div> <!-- post-section -->
+
                     </div>
+                </div> <!-- s-resume__section -->
 
-                </div> <!-- post-section -->
-                <section id="post">
-
+                <section id="utilities">
                     <div class="row s-resume__section">
                         <div class="column large-3 tab-12">
-                            <h3 class="section-header-allcaps">post</h3>
+                            <h3 class="section-header-allcaps">Utilities</h3>
                         </div>
                         <div class="column large-9 tab-12">
                             <div class="resume-block">
-
+                                <!-- utilities 001 -->
                                 <div class="resume-block__header">
-                                    <h4 class="h3"><?php echo htmlspecialchars($lang['post002-title'] ?? ''); ?>
+                                    <h4 class="h3">
+                                        <?php echo htmlspecialchars($lang['utilities001-title'] ?? ''); ?>
                                     </h4>
                                     <p class="resume-block__header-meta">
-                                        <span>Entertainment_YH</span>
+                                        <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
                                         <span class="resume-block__header-date">
-                                            Published on May 23<sup>th</sup>, 2025
+                                            June 18<sup>th</sup>, 2025 - Present
                                         </span>
                                     </p>
                                 </div>
 
                                 <p>
-                                    <?php echo htmlspecialchars($lang['post002-text'] ?? ''); ?>
+                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['utilities001-description'] ?? ''); ?><br
+                                        \>
+                                <blockquote>
+                                    <ul>
+                                        <li>
+                                            <a href="https://store.steampowered.com/" title="Steam主页"
+                                                style="text-shadow: 0 0 3px #000; color: snow;"><i class="fab fa-steam"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="https://store.steampowered.com/"
+                                                style="text-shadow: 0 0 3px #000; color: snow;">
+                                                <?php echo htmlspecialchars($lang['utilities001-steam'] ?? ''); ?>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.runoob.com/"
+                                                style="text-shadow: 0 0 3px #000; color: snow;">
+                                                <?php echo htmlspecialchars($lang['utilities001-runoob'] ?? ''); ?>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </blockquote>
                                 </p>
 
-                                <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
 
-                                <div class="resume-block__header">
-                                    <h4 class="h3"><?php echo htmlspecialchars($lang['post001-title'] ?? ''); ?>
-                                    </h4>
-                                    <p class="resume-block__header-meta">
-                                        <span>Entertainment_YH</span>
-                                        <span class="resume-block__header-date">
-                                            Published on May 17<sup>th</sup>, 2025
-                                        </span>
-                                    </p>
-                                </div>
-
-                                <p>
-                                    <?php echo htmlspecialchars($lang['post001-text'] ?? ''); ?>
-                                </p>
-
-                            </div> <!-- post-section -->
-
+                            </div> <!-- end resume-block -->
                         </div>
-                    </div> <!-- s-resume__section -->
 
-                    <section id="utilities">
+                    </div>
+
+                    <section id="article1">
                         <div class="row s-resume__section">
                             <div class="column large-3 tab-12">
-                                <h3 class="section-header-allcaps">Utilities</h3>
+                                <h3 class="section-header-allcaps">article</h3>
                             </div>
                             <div class="column large-9 tab-12">
                                 <div class="resume-block">
-                                    <!-- utilities 001 -->
+                                    <!-- article 001 -->
                                     <div class="resume-block__header">
                                         <h4 class="h3">
-                                            <?php echo htmlspecialchars($lang['utilities001-title'] ?? ''); ?>
+                                            <?php echo htmlspecialchars($lang['article001-title'] ?? ''); ?>
                                         </h4>
                                         <p class="resume-block__header-meta">
                                             <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
+                                            <span><?php echo htmlspecialchars($lang['article001-description'] ?? ''); ?></span>
                                             <span class="resume-block__header-date">
                                                 June 18<sup>th</sup>, 2025 - Present
                                             </span>
@@ -706,748 +549,699 @@ if (!empty($config['site_start_date'])) {
                                     </div>
 
                                     <p>
-                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['utilities001-description'] ?? ''); ?><br
-                                            \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-1'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-2'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-3'] ?? ''); ?>
+                                        <br \>
                                     <blockquote>
-                                        <ul>
-                                            <li>
-                                                <a href="https://store.steampowered.com/" title="Steam主页"
-                                                    style="text-shadow: 0 0 3px #000; color: snow;"><i
-                                                        class="fab fa-steam" aria-hidden="true"></i></a>
-                                                <a href="https://store.steampowered.com/"
-                                                    style="text-shadow: 0 0 3px #000; color: snow;">
-                                                    <?php echo htmlspecialchars($lang['utilities001-steam'] ?? ''); ?>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.runoob.com/"
-                                                    style="text-shadow: 0 0 3px #000; color: snow;">
-                                                    <?php echo htmlspecialchars($lang['utilities001-runoob'] ?? ''); ?>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-4'] ?? ''); ?>
                                     </blockquote>
+                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-5'] ?? ''); ?>
+                                    <br \>
+                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-6'] ?? ''); ?>
+                                    <br \>
+                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-7'] ?? ''); ?>
+                                    <br \>
+                                    <blockquote>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-8'] ?? ''); ?>
+                                    </blockquote>
+                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-9'] ?? ''); ?>
+                                    <?php echo htmlspecialchars($lang['article001-paragraph-10'] ?? ''); ?>
                                     </p>
 
+                                    <hr
+                                        style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
 
-                                </div> <!-- end resume-block -->
-                            </div>
 
-                        </div>
-
-                        <section id="article1">
-                            <div class="row s-resume__section">
-                                <div class="column large-3 tab-12">
-                                    <h3 class="section-header-allcaps">article</h3>
-                                </div>
-                                <div class="column large-9 tab-12">
-                                    <div class="resume-block">
-                                        <!-- article 001 -->
+                                    <section id="article2">
+                                        <!-- article 002 -->
                                         <div class="resume-block__header">
                                             <h4 class="h3">
-                                                <?php echo htmlspecialchars($lang['article001-title'] ?? ''); ?>
+                                                <?php echo htmlspecialchars($lang['article002-title'] ?? ''); ?>
                                             </h4>
                                             <p class="resume-block__header-meta">
                                                 <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
-                                                <span><?php echo htmlspecialchars($lang['article001-description'] ?? ''); ?></span>
+                                                <span><?php echo htmlspecialchars($lang['article002-description'] ?? ''); ?></span>
                                                 <span class="resume-block__header-date">
-                                                    June 18<sup>th</sup>, 2025 - Present
+                                                    June 26<sup>th</sup>, 2025 - Present
                                                 </span>
                                             </p>
                                         </div>
 
                                         <p>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-1'] ?? ''); ?>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-citation-1'] ?? ''); ?>
                                             <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-2'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-3'] ?? ''); ?>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-citation-2'] ?? ''); ?>
                                             <br \>
                                         <blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-4'] ?? ''); ?>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-1'] ?? ''); ?>
                                         </blockquote>
-                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-5'] ?? ''); ?>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-1-1'] ?? ''); ?>
                                         <br \>
-                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-6'] ?? ''); ?>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-1-2'] ?? ''); ?><br
+                                            \>
+                                        <blockquote>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-2'] ?? ''); ?>
+                                        </blockquote>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-2-1'] ?? ''); ?>
                                         <br \>
-                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-7'] ?? ''); ?>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-2-2'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-2-3'] ?? ''); ?>
                                         <br \>
                                         <blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-8'] ?? ''); ?>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-3'] ?? ''); ?>
                                         </blockquote>
-                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article001-paragraph-9'] ?? ''); ?>
-                                        <?php echo htmlspecialchars($lang['article001-paragraph-10'] ?? ''); ?>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-3-1'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-3-2'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-3-3'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-3-4'] ?? ''); ?>
+                                        <br \>
+                                        <blockquote>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-4'] ?? ''); ?>
+                                        </blockquote>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-4-1'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-4-2'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-4-3'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-4-4'] ?? ''); ?>
+                                        <br \>
+                                        <blockquote>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-5'] ?? ''); ?>
+                                        </blockquote>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-5-1'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-5-2'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-5-3'] ?? ''); ?>
+                                        <br \>
+                                        <blockquote>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-6'] ?? ''); ?>
+                                        </blockquote>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-6-1'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-6-2'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-6-3'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-6-4'] ?? ''); ?>
+                                        <br \>
+                                        <blockquote>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-7'] ?? ''); ?>
+                                        </blockquote>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-7-1'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-7-2'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-7-3'] ?? ''); ?>
+                                        <br \>
+                                        <blockquote>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-8'] ?? ''); ?>
+                                        </blockquote>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-8-1'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-8-2'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-8-3'] ?? ''); ?>
+                                        <br \>
+                                        <blockquote>
+                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-9'] ?? ''); ?>
+                                        </blockquote>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-9-1'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-9-2'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-9-3'] ?? ''); ?>
+                                        <br \>
+                                        &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-9-4'] ?? ''); ?>
+                                        <br \>
+                                        </p>
+
+                                        <!--article 003-->
+                                        <hr
+                                            style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
+
+                                        <section id="article3">
+
+                                            <div class="resume-block__header">
+                                                <h4 class="h3">
+                                                    <?php echo htmlspecialchars($lang['article003-title'] ?? ''); ?>
+                                                </h4>
+                                                <p class="resume-block__header-meta">
+                                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
+                                                    <span><?php echo htmlspecialchars($lang['article003-description'] ?? ''); ?></span>
+                                                    <span class="resume-block__header-date">
+                                                        July 14<sup>th</sup>, 2025 - Present
+                                                    </span>
+                                                </p>
+                                            </div>
+
+                                            <p>
+                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-citation-1'] ?? ''); ?>
+                                            </p>
+
+                                            <h4>
+                                                <?php echo htmlspecialchars($lang['article003-subtitle-1'] ?? ''); ?>
+                                            </h4>
+
+                                            <p>
+                                            <blockquote>
+                                                <?php echo htmlspecialchars($lang['article003-CPU-1'] ?? ''); ?>
+                                            </blockquote>
+                                            <ul>
+                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-1'] ?? ''); ?>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-CPU-1-2'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-4'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-5'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-6'] ?? ''); ?>
+                                                </li>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-CPU-1-3'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-3-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-3-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-3-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-3-4'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-3-5'] ?? ''); ?>
+                                                </li>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-CPU-1-4'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-4'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-5'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-6'] ?? ''); ?>
+                                                </li>
+                                            </ul>
+                                            <blockquote>
+                                                <?php echo htmlspecialchars($lang['article003-GPU-1'] ?? ''); ?>
+                                            </blockquote>
+                                            <ul>
+                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-GPU-1-1'] ?? ''); ?>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-GPU-1-2'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-4'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-5'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-6'] ?? ''); ?>
+                                                </li>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-GPU-1-3'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-3-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-3-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-3-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-3-4'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-3-5'] ?? ''); ?>
+                                                </li>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-GPU-1-4'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-4'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-5'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-6'] ?? ''); ?>
+                                                </li>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-GPU-1-5'] ?? ''); ?>
+                                                </p>
+                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-GPU-1-5-1'] ?? ''); ?>
+                                                <br \>
+                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-GPU-1-5-2'] ?? ''); ?>
+                                            </ul>
+                                            <blockquote>
+                                                <?php echo htmlspecialchars($lang['article003-Mb'] ?? ''); ?>
+                                            </blockquote>
+                                            <ul>
+                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-Mb-1'] ?? ''); ?>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-Mb-2'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-2-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-2-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-2-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-2-4'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-2-5'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-2-6'] ?? ''); ?>
+                                                </li>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-Mb-3'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-3-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-3-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-3-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-3-4'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-3-5'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-3-6'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-3-7'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-3-8'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-3-9'] ?? ''); ?>
+                                                </li>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-Mb-4'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-4-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-4-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-4-3'] ?? ''); ?>
+                                                </li>
+                                                <br \><br \>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-Mb-5'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-5-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-5-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-5-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-5-4'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-5-5'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-5-6'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-Mb-5-7'] ?? ''); ?>
+                                                </li>
+                                            </ul>
+                                            <blockquote>
+                                                <?php echo htmlspecialchars($lang['article003-RAM'] ?? ''); ?>
+                                            </blockquote>
+                                            <ul>
+                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-RAM-1'] ?? ''); ?>
+                                                <br><br>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-RAM-2'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-2-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-2-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-2-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-2-4'] ?? ''); ?>
+                                                </li>
+                                                <br><br>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-RAM-3'] ?? ''); ?>
+                                                </p>
+                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-RAM-3-1'] ?? ''); ?>
+                                                <br \>
+                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-RAM-3-2'] ?? ''); ?>
+                                                <br><br>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-RAM-4'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-4-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-4-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-4-3'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-4-4'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-4-5'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-4-6'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-4-7'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-4-8'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-4-9'] ?? ''); ?>
+                                                </li>
+                                                <br><br>
+                                                <p style="font-weight: bold">
+                                                    <?php echo htmlspecialchars($lang['article003-RAM-5'] ?? ''); ?>
+                                                </p>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-5-1'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-5-2'] ?? ''); ?>
+                                                </li>
+                                                <li><?php echo htmlspecialchars($lang['article003-RAM-5-3'] ?? ''); ?>
+                                                </li>
+
+                                            </ul>
+                                            <h3 style="text-align: center;">
+                                                <?php echo htmlspecialchars($lang['to-be-continued'] ?? ''); ?>
+                                            </h3>
+                                </div> <!-- end resume-block -->
+                            </div>
+
+                        </div>
+
+                        <section id="partnership">
+                            <div class="row s-resume__section">
+                                <div class="column large-3 tab-12">
+                                    <h3 class="section-header-allcaps">partnership</h3>
+                                </div>
+                                <div class="column large-9 tab-12">
+                                    <div class="resume-block">
+
+                                        <div class="resume-block__header">
+                                            <h4 class="h3">Voident_Game</h4>
+                                            <p class="resume-block__header-meta">
+                                                <span><?php echo htmlspecialchars($lang['voident-game'] ?? ''); ?></span>
+                                                <span class="resume-block__header-date">
+                                                    Established in Jun, 2022
+                                                </span>
+                                            </p>
+                                        </div>
+
+                                        <p>
+                                            <?php echo htmlspecialchars($lang['voident-game-description'] ?? ''); ?>
+                                        </p>
+
+                                    </div> <!-- end resume-block -->
+
+                                    <div class="resume-block">
+
+                                        <div class="resume-block__header">
+                                            <h4 class="h4">
+                                                <?php echo htmlspecialchars($lang['voident-game-about'] ?? ''); ?>
+                                            </h4>
+                                            <p class="resume-block__header-meta">
+                                                <span><?php echo htmlspecialchars($lang['voident-game'] ?? ''); ?></span>
+                                                <span class="resume-block__header-date">
+                                                    Established in Jun, 2022
+                                                </span>
+                                            </p>
+                                        </div>
+
+                                        <p>
+                                            <?php echo htmlspecialchars($lang['voident-game-product1'] ?? ''); ?>
+                                            <br \>
+                                            <?php echo htmlspecialchars($lang['voident-game-product2'] ?? ''); ?>
                                         </p>
 
                                         <hr
                                             style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
 
+                                        <div class="resume-block">
 
-                                        <section id="article2">
-                                            <!-- article 002 -->
                                             <div class="resume-block__header">
-                                                <h4 class="h3">
-                                                    <?php echo htmlspecialchars($lang['article002-title'] ?? ''); ?>
-                                                </h4>
+                                                <h4 class="h3">简单主页 | Simple Mainpage</h4>
                                                 <p class="resume-block__header-meta">
-                                                    <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
-                                                    <span><?php echo htmlspecialchars($lang['article002-description'] ?? ''); ?></span>
+                                                    <span><?php echo htmlspecialchars($lang['simple-mainpage'] ?? ''); ?></span>
                                                     <span class="resume-block__header-date">
-                                                        June 26<sup>th</sup>, 2025 - Present
+                                                        Established in "UNKNOWABLE"
                                                     </span>
                                                 </p>
                                             </div>
 
                                             <p>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-citation-1'] ?? ''); ?>
-                                                <br \>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-citation-2'] ?? ''); ?>
-                                                <br \>
-                                            <blockquote>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-1'] ?? ''); ?>
-                                            </blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-1-1'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-1-2'] ?? ''); ?><br
-                                                \>
-                                            <blockquote>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-2'] ?? ''); ?>
-                                            </blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-2-1'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-2-2'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-2-3'] ?? ''); ?>
-                                            <br \>
-                                            <blockquote>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-3'] ?? ''); ?>
-                                            </blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-3-1'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-3-2'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-3-3'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-3-4'] ?? ''); ?>
-                                            <br \>
-                                            <blockquote>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-4'] ?? ''); ?>
-                                            </blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-4-1'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-4-2'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-4-3'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-4-4'] ?? ''); ?>
-                                            <br \>
-                                            <blockquote>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-5'] ?? ''); ?>
-                                            </blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-5-1'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-5-2'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-5-3'] ?? ''); ?>
-                                            <br \>
-                                            <blockquote>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-6'] ?? ''); ?>
-                                            </blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-6-1'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-6-2'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-6-3'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-6-4'] ?? ''); ?>
-                                            <br \>
-                                            <blockquote>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-7'] ?? ''); ?>
-                                            </blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-7-1'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-7-2'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-7-3'] ?? ''); ?>
-                                            <br \>
-                                            <blockquote>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-8'] ?? ''); ?>
-                                            </blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-8-1'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-8-2'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-8-3'] ?? ''); ?>
-                                            <br \>
-                                            <blockquote>
-                                                &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-subtitle-9'] ?? ''); ?>
-                                            </blockquote>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-9-1'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-9-2'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-9-3'] ?? ''); ?>
-                                            <br \>
-                                            &emsp;&emsp;<?php echo htmlspecialchars($lang['article002-paragraph-9-4'] ?? ''); ?>
-                                            <br \>
+                                                <?php echo htmlspecialchars($lang['simple-mainpage-description-1'] ?? ''); ?>
+                                            </p>
+                                            <p>
+                                                <?php echo htmlspecialchars($lang['simple-mainpage-description-2'] ?? ''); ?>
+                                            </p>
+                                            <p>
+                                                <?php echo htmlspecialchars($lang['simple-mainpage-description-3'] ?? ''); ?>
+                                            </p>
+                                            <p>
+                                                <?php echo htmlspecialchars(($lang['simple-mainpage-link'] ?? '')); ?>
+                                                <a href="https://github.com/MFn233/PCL-Mainpage"
+                                                    title="Simple Mainpage 的 GitHub 仓库地址">https://github.com/MFn233/PCL-Mainpage</a>
                                             </p>
 
-                                            <!--article 003-->
-                                            <hr
-                                                style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
+                                        </div> <!-- end resume-block -->
 
-                                            <section id="article3">
-
-                                                <div class="resume-block__header">
-                                                    <h4 class="h3">
-                                                        <?php echo htmlspecialchars($lang['article003-title'] ?? ''); ?>
-                                                    </h4>
-                                                    <p class="resume-block__header-meta">
-                                                        <span><?php echo htmlspecialchars($lang['ID'] ?? ''); ?></span>
-                                                        <span><?php echo htmlspecialchars($lang['article003-description'] ?? ''); ?></span>
-                                                        <span class="resume-block__header-date">
-                                                            July 14<sup>th</sup>, 2025 - Present
-                                                        </span>
-                                                    </p>
-                                                </div>
-
-                                                <p>
-                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-citation-1'] ?? ''); ?>
-                                                </p>
-
-                                                <h4>
-                                                    <?php echo htmlspecialchars($lang['article003-subtitle-1'] ?? ''); ?>
-                                                </h4>
-
-                                                <p>
-                                                <blockquote>
-                                                    <?php echo htmlspecialchars($lang['article003-CPU-1'] ?? ''); ?>
-                                                </blockquote>
-                                                <ul>
-                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-CPU-1-1'] ?? ''); ?>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-CPU-1-2'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-4'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-5'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-2-6'] ?? ''); ?>
-                                                    </li>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-CPU-1-3'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-3-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-3-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-3-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-3-4'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-3-5'] ?? ''); ?>
-                                                    </li>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-CPU-1-4'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-4'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-5'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-CPU-1-4-6'] ?? ''); ?>
-                                                    </li>
-                                                </ul>
-                                                <blockquote>
-                                                    <?php echo htmlspecialchars($lang['article003-GPU-1'] ?? ''); ?>
-                                                </blockquote>
-                                                <ul>
-                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-GPU-1-1'] ?? ''); ?>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-GPU-1-2'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-4'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-5'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-2-6'] ?? ''); ?>
-                                                    </li>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-GPU-1-3'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-3-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-3-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-3-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-3-4'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-3-5'] ?? ''); ?>
-                                                    </li>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-GPU-1-4'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-4'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-5'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-GPU-1-4-6'] ?? ''); ?>
-                                                    </li>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-GPU-1-5'] ?? ''); ?>
-                                                    </p>
-                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-GPU-1-5-1'] ?? ''); ?>
-                                                    <br \>
-                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-GPU-1-5-2'] ?? ''); ?>
-                                                </ul>
-                                                <blockquote>
-                                                    <?php echo htmlspecialchars($lang['article003-Mb'] ?? ''); ?>
-                                                </blockquote>
-                                                <ul>
-                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-Mb-1'] ?? ''); ?>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-Mb-2'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-2-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-2-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-2-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-2-4'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-2-5'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-2-6'] ?? ''); ?>
-                                                    </li>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-Mb-3'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-3-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-3-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-3-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-3-4'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-3-5'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-3-6'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-3-7'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-3-8'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-3-9'] ?? ''); ?>
-                                                    </li>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-Mb-4'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-4-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-4-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-4-3'] ?? ''); ?>
-                                                    </li>
-                                                    <br \><br \>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-Mb-5'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-5-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-5-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-5-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-5-4'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-5-5'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-5-6'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-Mb-5-7'] ?? ''); ?>
-                                                    </li>
-                                                </ul>
-                                                <blockquote>
-                                                    <?php echo htmlspecialchars($lang['article003-RAM'] ?? ''); ?>
-                                                </blockquote>
-                                                <ul>
-                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-RAM-1'] ?? ''); ?>
-                                                    <br><br>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-RAM-2'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-2-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-2-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-2-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-2-4'] ?? ''); ?>
-                                                    </li>
-                                                    <br><br>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-RAM-3'] ?? ''); ?>
-                                                    </p>
-                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-RAM-3-1'] ?? ''); ?>
-                                                    <br \>
-                                                    &emsp;&emsp;<?php echo htmlspecialchars($lang['article003-RAM-3-2'] ?? ''); ?>
-                                                    <br><br>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-RAM-4'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-3'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-4'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-5'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-6'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-7'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-8'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-4-9'] ?? ''); ?>
-                                                    </li>
-                                                    <br><br>
-                                                    <p style="font-weight: bold">
-                                                        <?php echo htmlspecialchars($lang['article003-RAM-5'] ?? ''); ?>
-                                                    </p>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-5-1'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-5-2'] ?? ''); ?>
-                                                    </li>
-                                                    <li><?php echo htmlspecialchars($lang['article003-RAM-5-3'] ?? ''); ?>
-                                                    </li>
-
-                                                </ul>
-                                                <h3 style="text-align: center;">
-                                                    <?php echo htmlspecialchars($lang['to-be-continued'] ?? ''); ?>
-                                                </h3>
                                     </div> <!-- end resume-block -->
                                 </div>
+                            </div> <!-- s-resume__section -->
 
-                            </div>
-
-                            <section id="partnership">
+                            <section id="language">
                                 <div class="row s-resume__section">
                                     <div class="column large-3 tab-12">
-                                        <h3 class="section-header-allcaps">partnership</h3>
+                                        <h3 class="section-header-allcaps">language<br \>localization</h3>
                                     </div>
                                     <div class="column large-9 tab-12">
                                         <div class="resume-block">
 
-                                            <div class="resume-block__header">
-                                                <h4 class="h3">Voident_Game</h4>
-                                                <p class="resume-block__header-meta">
-                                                    <span><?php echo htmlspecialchars($lang['voident-game'] ?? ''); ?></span>
-                                                    <span class="resume-block__header-date">
-                                                        Established in Jun, 2022
-                                                    </span>
-                                                </p>
-                                            </div>
-
                                             <p>
-                                                <?php echo htmlspecialchars($lang['voident-game-description'] ?? ''); ?>
+                                                <?php echo htmlspecialchars($lang['translation-description'] ?? ''); ?>
                                             </p>
+
+                                            <ul class="skill-bars-fat">
+                                                <li>
+                                                    <div class="progress percent100"></div>
+                                                    <strong>
+                                                        简体中文/people's republic of china
+                                                    </strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent90"></div>
+                                                    <strong>繁體中文/hong kong, taiwan, macau (PRC)</strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent85"></div>
+                                                    <strong>
+                                                        english/united states
+                                                    </strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent75"></div>
+                                                    <strong>Русский язык/russian federation</strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent5"></div>
+                                                    <strong>Deutsch/germany</strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent75"></div>
+                                                    <strong>日本語/japan</strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent5"></div>
+                                                    <strong>한국어/republic of korea</strong>
+                                                </li>
+                                            </ul>
 
                                         </div> <!-- end resume-block -->
 
-                                        <div class="resume-block">
-
-                                            <div class="resume-block__header">
-                                                <h4 class="h4">
-                                                    <?php echo htmlspecialchars($lang['voident-game-about'] ?? ''); ?>
-                                                </h4>
-                                                <p class="resume-block__header-meta">
-                                                    <span><?php echo htmlspecialchars($lang['voident-game'] ?? ''); ?></span>
-                                                    <span class="resume-block__header-date">
-                                                        Established in Jun, 2022
-                                                    </span>
-                                                </p>
-                                            </div>
-
-                                            <p>
-                                                <?php echo htmlspecialchars($lang['voident-game-product1'] ?? ''); ?>
-                                                <br \>
-                                                <?php echo htmlspecialchars($lang['voident-game-product2'] ?? ''); ?>
-                                            </p>
-
-                                            <hr style="border: none; border-top: 2px dashed #00bfae; margin: 2.5em 0; width: 80%;">
-
-                                            <div class="resume-block">
-
-                                                <div class="resume-block__header">
-                                                    <h4 class="h3">简单主页 | Simple Mainpage</h4>
-                                                    <p class="resume-block__header-meta">
-                                                        <span><?php echo htmlspecialchars($lang['simple-mainpage'] ?? ''); ?></span>
-                                                        <span class="resume-block__header-date">
-                                                            Established in "UNKNOWABLE"
-                                                        </span>
-                                                    </p>
-                                                </div>
-
-                                                <p>
-                                                    <?php echo htmlspecialchars($lang['simple-mainpage-description-1'] ?? ''); ?>
-                                                </p>
-                                                <p>
-                                                    <?php echo htmlspecialchars($lang['simple-mainpage-description-2'] ?? ''); ?>
-                                                </p>
-                                                <p>
-                                                    <?php echo htmlspecialchars($lang['simple-mainpage-description-3'] ?? ''); ?>
-                                                </p>
-                                                <p>
-                                                    <?php echo htmlspecialchars(($lang['simple-mainpage-link'] ?? '')); ?> 
-                                                    <a href="https://github.com/MFn233/PCL-Mainpage" title="Simple Mainpage 的 GitHub 仓库地址">https://github.com/MFn233/PCL-Mainpage</a>
-                                                </p>
-
-                                            </div> <!-- end resume-block -->
-
-                                        </div> <!-- end resume-block -->
                                     </div>
                                 </div> <!-- s-resume__section -->
 
-                                <section id="language">
-                                    <div class="row s-resume__section">
-                                        <div class="column large-3 tab-12">
-                                            <h3 class="section-header-allcaps">language<br \>localization</h3>
+                            </section> <!-- end s-resume -->
+
+
+                            <!-- portfolio
+                                    ===================== -->
+                            <section id="portfolio" class="s-portfolio target-section">
+                                <section id="photos">
+
+                                    <div class="row s-portfolio__header">
+                                        <div class="column large-12">
+                                            <h3><?php echo htmlspecialchars($lang['photo-title'] ?? ''); ?>
+                                            </h3>
                                         </div>
-                                        <div class="column large-9 tab-12">
-                                            <div class="resume-block">
+                                    </div>
 
-                                                <p>
-                                                    <?php echo htmlspecialchars($lang['translation-description'] ?? ''); ?>
+                                    <div
+                                        class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+                                        <div class="column folio-item">
+                                            <a href="#modal-01" class="folio-item__thumb">
+                                                <img src="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
+                                                    srcset="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
+                                                    alt="图片未加载，请联系网站管理员。">
+                                            </a>
+                                        </div> <!-- end folio-item -->
+
+                                        <div class="column folio-item">
+                                            <a href="#modal-02" class="folio-item__thumb">
+                                                <img src="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
+                                                    srcset="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
+                                                    alt="图片未加载，请联系网站管理员。">
+                                            </a>
+                                        </div> <!-- end folio-item -->
+
+                                        <div class="column folio-item">
+                                            <a href="#modal-03" class="folio-item__thumb">
+                                                <img src="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
+                                                    srcset="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
+                                                    alt="图片未加载，请联系网站管理员。">
+                                            </a>
+                                        </div> <!-- end folio-item -->
+
+                                        <div class="column folio-item">
+                                            <a href="#modal-04" class="folio-item__thumb">
+                                                <img src="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
+                                                    srcset="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
+                                                    alt="图片未加载，请联系网站管理员。">
+                                            </a>
+                                        </div> <!-- end folio-item -->
+
+                                    </div> <!-- end folio-list -->
+
+
+                                    <!-- Modal Templates Popup
+                                                    == -->
+                                    <div id="modal-01" hidden>
+                                        <div class="modal-popup">
+                                            <img src="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
+                                                alt="来福" />
+
+                                            <div class="modal-popup__desc">
+                                                <h5><?php echo htmlspecialchars($lang['laifu'] ?? ''); ?>
+                                                </h5>
+                                                <p><?php echo htmlspecialchars($lang['laifu-description'] ?? ''); ?>
                                                 </p>
-
-                                                <ul class="skill-bars-fat">
-                                                    <li>
-                                                        <div class="progress percent100"></div>
-                                                        <strong>
-                                                            简体中文/people's republic of china
-                                                        </strong>
+                                                <ul class="modal-popup__cat">
+                                                    <li><?php echo htmlspecialchars($lang['laifu-time'] ?? ''); ?>
                                                     </li>
-                                                    <li>
-                                                        <div class="progress percent90"></div>
-                                                        <strong>繁體中文/hong kong, taiwan, macau (PRC)</strong>
+                                                    <li><?php echo htmlspecialchars($lang['laifu-type'] ?? ''); ?>
                                                     </li>
-                                                    <li>
-                                                        <div class="progress percent85"></div>
-                                                        <strong>
-                                                            english/united states
-                                                        </strong>
-                                                    </li>
-                                                    <li>
-                                                        <div class="progress percent75"></div>
-                                                        <strong>Русский язык/russian federation</strong>
-                                                    </li>
-                                                    <li>
-                                                        <div class="progress percent5"></div>
-                                                        <strong>Deutsch/germany</strong>
-                                                    </li>
-                                                    <li>
-                                                        <div class="progress percent75"></div>
-                                                        <strong>日本語/japan</strong>
-                                                    </li>
-                                                    <li>
-                                                        <div class="progress percent5"></div>
-                                                        <strong>한국어/republic of korea</strong>
+                                                    <li><?php echo htmlspecialchars($lang['laifu-localtion'] ?? ''); ?>
                                                     </li>
                                                 </ul>
-
-                                            </div> <!-- end resume-block -->
+                                            </div>
 
                                         </div>
-                                    </div> <!-- s-resume__section -->
+                                    </div> <!-- end modal -->
 
-                                </section> <!-- end s-resume -->
+                                    <div id="modal-02" hidden>
+                                        <div class="modal-popup">
+                                            <img src="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
+                                                alt="" />
 
-
-                                <!-- portfolio
-                                    ===================== -->
-                                <section id="portfolio" class="s-portfolio target-section">
-                                    <section id="photos">
-
-                                        <div class="row s-portfolio__header">
-                                            <div class="column large-12">
-                                                <h3><?php echo htmlspecialchars($lang['photo-title'] ?? ''); ?>
-                                                </h3>
+                                            <div class="modal-popup__desc">
+                                                <h5><?php echo htmlspecialchars($lang['xianmi-national'] ?? ''); ?>
+                                                </h5>
+                                                <p><?php echo htmlspecialchars($lang['xianmi-description'] ?? ''); ?>
+                                                </p>
+                                                <ul class="modal-popup__cat">
+                                                    <li><?php echo htmlspecialchars($lang['xianmi-time'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['xianmi-type'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['xianmi-location'] ?? ''); ?>
+                                                    </li>
+                                                </ul>
                                             </div>
+
                                         </div>
+                                    </div> <!-- end modal -->
 
-                                        <div
-                                            class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+                                    <div id="modal-03" hidden>
+                                        <div class="modal-popup">
+                                            <img src="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
+                                                alt="" />
 
-                                            <div class="column folio-item">
-                                                <a href="#modal-01" class="folio-item__thumb">
-                                                    <img src="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
-                                                        srcset="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
-                                                        alt="图片未加载，请联系网站管理员。">
-                                                </a>
-                                            </div> <!-- end folio-item -->
-
-                                            <div class="column folio-item">
-                                                <a href="#modal-02" class="folio-item__thumb">
-                                                    <img src="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
-                                                        srcset="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
-                                                        alt="图片未加载，请联系网站管理员。">
-                                                </a>
-                                            </div> <!-- end folio-item -->
-
-                                            <div class="column folio-item">
-                                                <a href="#modal-03" class="folio-item__thumb">
-                                                    <img src="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
-                                                        srcset="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
-                                                        alt="图片未加载，请联系网站管理员。">
-                                                </a>
-                                            </div> <!-- end folio-item -->
-
-                                            <div class="column folio-item">
-                                                <a href="#modal-04" class="folio-item__thumb">
-                                                    <img src="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
-                                                        srcset="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
-                                                        alt="图片未加载，请联系网站管理员。">
-                                                </a>
-                                            </div> <!-- end folio-item -->
-
-                                        </div> <!-- end folio-list -->
-
-
-                                        <!-- Modal Templates Popup
-                                                    == -->
-                                        <div id="modal-01" hidden>
-                                            <div class="modal-popup">
-                                                <img src="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
-                                                    alt="来福" />
-
-                                                <div class="modal-popup__desc">
-                                                    <h5><?php echo htmlspecialchars($lang['laifu'] ?? ''); ?>
-                                                    </h5>
-                                                    <p><?php echo htmlspecialchars($lang['laifu-description'] ?? ''); ?>
-                                                    </p>
-                                                    <ul class="modal-popup__cat">
-                                                        <li><?php echo htmlspecialchars($lang['laifu-time'] ?? ''); ?>
-                                                        </li>
-                                                        <li><?php echo htmlspecialchars($lang['laifu-type'] ?? ''); ?>
-                                                        </li>
-                                                        <li><?php echo htmlspecialchars($lang['laifu-localtion'] ?? ''); ?>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
+                                            <div class="modal-popup__desc">
+                                                <h5><?php echo htmlspecialchars($lang['taklamakan-desert'] ?? ''); ?>
+                                                </h5>
+                                                <p><?php echo htmlspecialchars($lang['taklamakan-description'] ?? ''); ?>
+                                                </p>
+                                                <ul class="modal-popup__cat">
+                                                    <li><?php echo htmlspecialchars($lang['taklamakan-time'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['taklamakan-type'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['taklamakan-location'] ?? ''); ?>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </div> <!-- end modal -->
 
-                                        <div id="modal-02" hidden>
-                                            <div class="modal-popup">
-                                                <img src="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
-                                                    alt="" />
+                                        </div>
+                                    </div> <!-- end modal -->
 
-                                                <div class="modal-popup__desc">
-                                                    <h5><?php echo htmlspecialchars($lang['xianmi-national'] ?? ''); ?>
-                                                    </h5>
-                                                    <p><?php echo htmlspecialchars($lang['xianmi-description'] ?? ''); ?>
-                                                    </p>
-                                                    <ul class="modal-popup__cat">
-                                                        <li><?php echo htmlspecialchars($lang['xianmi-time'] ?? ''); ?>
-                                                        </li>
-                                                        <li><?php echo htmlspecialchars($lang['xianmi-type'] ?? ''); ?>
-                                                        </li>
-                                                        <li><?php echo htmlspecialchars($lang['xianmi-location'] ?? ''); ?>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                    <div id="modal-04" hidden>
+                                        <div class="modal-popup">
+                                            <img src="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
+                                                alt="" />
 
+                                            <div class="modal-popup__desc">
+                                                <h5><?php echo htmlspecialchars($lang['thunder'] ?? ''); ?>
+                                                </h5>
+                                                <p><?php echo htmlspecialchars($lang['thunder-description'] ?? ''); ?>
+                                                </p>
+                                                <ul class="modal-popup__cat">
+                                                    <li><?php echo htmlspecialchars($lang['thunder-time'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['thunder-type'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['thunder-location'] ?? ''); ?>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </div> <!-- end modal -->
 
-                                        <div id="modal-03" hidden>
-                                            <div class="modal-popup">
-                                                <img src="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
-                                                    alt="" />
+                                        </div>
+                                    </div> <!-- end modal -->
 
-                                                <div class="modal-popup__desc">
-                                                    <h5><?php echo htmlspecialchars($lang['taklamakan-desert'] ?? ''); ?>
-                                                    </h5>
-                                                    <p><?php echo htmlspecialchars($lang['taklamakan-description'] ?? ''); ?>
-                                                    </p>
-                                                    <ul class="modal-popup__cat">
-                                                        <li><?php echo htmlspecialchars($lang['taklamakan-time'] ?? ''); ?>
-                                                        </li>
-                                                        <li><?php echo htmlspecialchars($lang['taklamakan-type'] ?? ''); ?>
-                                                        </li>
-                                                        <li><?php echo htmlspecialchars($lang['taklamakan-location'] ?? ''); ?>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                            </div>
-                                        </div> <!-- end modal -->
-
-                                        <div id="modal-04" hidden>
-                                            <div class="modal-popup">
-                                                <img src="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
-                                                    alt="" />
-
-                                                <div class="modal-popup__desc">
-                                                    <h5><?php echo htmlspecialchars($lang['thunder'] ?? ''); ?>
-                                                    </h5>
-                                                    <p><?php echo htmlspecialchars($lang['thunder-description'] ?? ''); ?>
-                                                    </p>
-                                                    <ul class="modal-popup__cat">
-                                                        <li><?php echo htmlspecialchars($lang['thunder-time'] ?? ''); ?>
-                                                        </li>
-                                                        <li><?php echo htmlspecialchars($lang['thunder-type'] ?? ''); ?>
-                                                        </li>
-                                                        <li><?php echo htmlspecialchars($lang['thunder-location'] ?? ''); ?>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                            </div>
-                                        </div> <!-- end modal -->
-
-                                    </section> <!-- end s-portfolio -->
-                                </section>
+                                </section> <!-- end s-portfolio -->
+                            </section>
     </div>
 
 
