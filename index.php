@@ -616,9 +616,9 @@ if (!empty($config['site_start_date'])) {
                                     <div class="resume-block">
 
                                         <div class="resume-block__header">
-                                            <h4 class="h3"><a href="https://ringeal007.netlify.app">Ringeal007</a></h4>
+                                            <h4 class="h3">Ringeal007</h4>
                                             <p class="resume-block__header-meta">
-                                                <span><?php echo htmlspecialchars($lang['ringeal007'] ?? ''); ?></span>
+                                                <span><a href="https://ringeal007.netlify.app"><?php echo htmlspecialchars($lang['ringeal007'] ?? ''); ?></a></span>
                                                 <span class="resume-block__header-date">
                                                     Added in Mar 12<sup>th</sup>, 2026
                                                 </span>
