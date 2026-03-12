@@ -416,9 +416,6 @@ if (!empty($config['site_start_date'])) {
 
             <!-- 是的，我知道这个投票的逻辑很不合理，这个投票根本就不可信，有人可以重复投票，可以每10分钟来刷一个投票，但可悲的是，我没有足够的技术力来阻止，我无法直接通过IP来限制投票，因为这样会导致处在同一网络环境下的人无法投票。 -->
             <div class="row s-resume__section">
-                <div class="column large-3 tab-12">
-                    <h3 class="section-header-allcaps">vote</h3>
-                </div>
             
             </div> <!-- post-section -->
             <section id="statistics"></section>
