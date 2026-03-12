@@ -217,7 +217,10 @@ if (!empty($config['site_start_date'])) {
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6RQ021S8W"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-J6RQ021S8W');
@@ -261,14 +264,14 @@ if (!empty($config['site_start_date'])) {
 <body>
     <script>
         window.dailyData = <?php
-        $recent_days = [];
-        $today = date('Y-m-d');
-        for ($i = 14; $i >= 0; $i--) {
-            $d = date('Y-m-d', strtotime("-$i day", strtotime($today)));
-            $recent_days[] = $daily_data[$d] ?? 0;
-        }
-        echo json_encode($recent_days, JSON_UNESCAPED_UNICODE);
-        ?>;
+                            $recent_days = [];
+                            $today = date('Y-m-d');
+                            for ($i = 14; $i >= 0; $i--) {
+                                $d = date('Y-m-d', strtotime("-$i day", strtotime($today)));
+                                $recent_days[] = $daily_data[$d] ?? 0;
+                            }
+                            echo json_encode($recent_days, JSON_UNESCAPED_UNICODE);
+                            ?>;
     </script>
 
     <!-- header
@@ -278,23 +281,23 @@ if (!empty($config['site_start_date'])) {
             <nav class="s-header__nav">
                 <ul>
                     <li<?php if ($lang_code === 'zh-cn')
-                        echo ' class="current"'; ?>>
+                            echo ' class="current"'; ?>>
                         <a href="?lang=zh-cn">简体中文</a>
                         </li>
                         <li<?php if ($lang_code === 'en')
-                            echo ' class="current"'; ?>>
+                                echo ' class="current"'; ?>>
                             <a href="?lang=en">English</a>
                             </li>
                             <li<?php if ($lang_code === 'zh-tw')
-                                echo ' class="current"'; ?>>
+                                    echo ' class="current"'; ?>>
                                 <a href="?lang=zh-tw">繁體中文</a>
                                 </li>
                                 <li<?php if ($lang_code === 'jp')
-                                    echo ' class="current"'; ?>>
+                                        echo ' class="current"'; ?>>
                                     <a href="?lang=jp">日本語</a>
                                     </li>
                                     <li<?php if ($lang_code === 'ru')
-                                        echo ' class="current"'; ?>>
+                                            echo ' class="current"'; ?>>
                                         <a href="?lang=ru">Русский</a>
                                         </li>
                 </ul>
@@ -309,8 +312,8 @@ if (!empty($config['site_start_date'])) {
 
     <!-- hero
         ================================================== -->
-    <section id="hero" class="s-hero target-section">
-        <section id="about"></section>
+            <section id="hero" class="s-hero target-section">
+                <section id="about"></section><!-- Ringeal007 MARK -->
 
         <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
 
@@ -365,7 +368,7 @@ if (!empty($config['site_start_date'])) {
 
     <!-- about
         ================================================== -->
-    <section id="about" class="s-about target-section">
+            <section id="about" class="s-about target-section">
 
         <div class="row">
             <div class="column large-3 tab-12">
@@ -409,32 +412,35 @@ if (!empty($config['site_start_date'])) {
 
     </section> <!-- end s-about -->
 
-    <div id="main">
-        <section id="vote" class="s-resume target-section">
-        </section>
-        <!-- post-section -->
-        <section id="statistics"></section>
-
-
-        <div class="row s-resume__section">
-            <div class="column large-3 tab-12">
-                <h3 class="section-header-allcaps">Statistics</h3>
-            </div>
-            <div class="column large-9 tab-12">
-                <div class="resume-block">
-                    <div class="resume-block__header">
-                        <h4 class="h3"><?php echo htmlspecialchars($lang['statistics-title'] ?? ''); ?></h4>
-                    </div>
-                    <div id="chart-container">
-                        <canvas id="myChart" height="300"></canvas>
+    <div id="main" style="background-color: white;">
+        <!--
+        <section id="statistics" class="s-resume target-section">
+        -->
+            <div class="row s-resume__section target-section">
+                <div class="column large-3 tab-12">
+                    <h3 class="section-header-allcaps">Statistics</h3>
+                </div>
+                <div class="column large-9 tab-12">
+                    <div class="resume-block">
+                        <div class="resume-block__header">
+                            <h4 class="h3"><?php echo htmlspecialchars($lang['statistics-title'] ?? ''); ?></h4>
+                        </div>
+                        <div id="chart-container">
+                            <canvas id="myChart" height="300"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        <!--
+        </section>
+        -->
 
-        <section id="post">
+        <!-- post-section -->
+        <!--
+        <section id="post" class="s-resume target-section">
+        -->
 
-            <div class="row s-resume__section">
+            <div class="row s-resume__section target-section">
                 <div class="column large-3 tab-12">
                     <h3 class="section-header-allcaps">post</h3>
                 </div>
@@ -475,12 +481,15 @@ if (!empty($config['site_start_date'])) {
 
                     </div> <!-- post-section -->
 
-                </div>
+                </div><!--
+                        
             </div> <!-- s-resume__section -->
         </section>
 
-        <section id="utilities">
-            <div class="row s-resume__section">
+        <!--
+        <section id="utilities" class="s-resume target-section">
+        -->
+            <div class="row s-resume__section target-section">
                 <div class="column large-3 tab-12">
                     <h3 class="section-header-allcaps">Utilities</h3>
                 </div>
@@ -528,8 +537,10 @@ if (!empty($config['site_start_date'])) {
             </div>
         </section>
 
-        <section id="partnership">
-            <div class="row s-resume__section">
+        <!--
+        <section id="partnership" class="s-resume target-section">
+        -->
+            <div class="row s-resume__section target-section">
                 <div class="column large-3 tab-12">
                     <h3 class="section-header-allcaps">partnership</h3>
                 </div>
@@ -608,8 +619,10 @@ if (!empty($config['site_start_date'])) {
             </div> <!-- s-resume__section -->
         </section>
 
-        <section id="friendship">
-            <div class="row s-resume__section">
+        <!--
+        <section id="friendship" class="s-resume target-section">
+        -->
+            <div class="row s-resume__section target-section">
                 <div class="column large-3 tab-12">
                     <h3 class="section-header-allcaps">friendship</h3>
                 </div>
@@ -636,8 +649,10 @@ if (!empty($config['site_start_date'])) {
             </div> <!-- s-resume__section -->
         </section>
 
-        <section id="language">
-            <div class="row s-resume__section">
+        <!--
+        <section id="language" class="s-resume target-section">
+        -->
+            <div class="row s-resume__section target-section">
                 <div class="column large-3 tab-12">
                     <h3 class="section-header-allcaps">language<br \>localization</h3>
                 </div>
@@ -693,8 +708,8 @@ if (!empty($config['site_start_date'])) {
 
         <!-- portfolio
                                     ===================== -->
-        <section id="portfolio" class="s-portfolio target-section">
-            <section id="photos">
+                <section id="portfolio" class="s-portfolio target-section">
+                    <section id="photos">
 
                 <div class="row s-portfolio__header">
                     <div class="column large-12">
@@ -839,7 +854,7 @@ if (!empty($config['site_start_date'])) {
 
     <!-- testimonials
         ================================================== -->
-    <section id="testimonials" class="s-testimonials target-section">
+            <section id="testimonials" class="s-testimonials target-section">
 
         <div class="s-testimonials__bg"></div>
 
@@ -929,7 +944,7 @@ if (!empty($config['site_start_date'])) {
 
     <!-- footer
         ================================================== -->
-    <section id="footer">
+            <section id="footer">
         <footer class="s-footer">
             <div class="row">
                 <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
