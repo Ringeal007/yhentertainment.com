@@ -252,9 +252,9 @@ if (!empty($config['site_start_date'])) {
     <!-- favicons
         ================================================== -->
     <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="favicon_io/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicon_io/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon_io/favicon-96x96.png" sizes="96x96">
     <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon_io/favicon.svg" type="image/svg+xml">
 
 </head>
 
@@ -607,207 +607,233 @@ if (!empty($config['site_start_date'])) {
                             </div>
                         </div> <!-- s-resume__section -->
 
-                        <section id="language">
+                        <section id="friendship">
                             <div class="row s-resume__section">
                                 <div class="column large-3 tab-12">
-                                    <h3 class="section-header-allcaps">language<br \>localization</h3>
+                                    <h3 class="section-header-allcaps">friendship</h3>
                                 </div>
                                 <div class="column large-9 tab-12">
                                     <div class="resume-block">
 
+                                        <div class="resume-block__header">
+                                            <h4 class="h3"><a href="https://ringeal007.netlify.app">Ringeal007</a></h4>
+                                            <p class="resume-block__header-meta">
+                                                <span><?php echo htmlspecialchars($lang['ringeal007'] ?? ''); ?></span>
+                                                <span class="resume-block__header-date">
+                                                    Added in Mar 12<sup>th</sup>, 2026
+                                                </span>
+                                            </p>
+                                        </div>
+
                                         <p>
-                                            <?php echo htmlspecialchars($lang['translation-description'] ?? ''); ?>
+                                            <?php echo htmlspecialchars($lang['ringeal007-description'] ?? ''); ?>
                                         </p>
 
-                                        <ul class="skill-bars-fat">
-                                            <li>
-                                                <div class="progress percent100"></div>
-                                                <strong>
-                                                    简体中文/people's republic of china
-                                                </strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent90"></div>
-                                                <strong>繁體中文/hong kong, taiwan, macau (PRC)</strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent85"></div>
-                                                <strong>
-                                                    english/united states
-                                                </strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent75"></div>
-                                                <strong>Русский язык/russian federation</strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent5"></div>
-                                                <strong>Deutsch/germany</strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent75"></div>
-                                                <strong>日本語/japan</strong>
-                                            </li>
-                                            <li>
-                                                <div class="progress percent5"></div>
-                                                <strong>한국어/republic of korea</strong>
-                                            </li>
-                                        </ul>
-
                                     </div> <!-- end resume-block -->
-
                                 </div>
                             </div> <!-- s-resume__section -->
 
-                        </section> <!-- end s-resume -->
+                            <section id="language">
+                                <div class="row s-resume__section">
+                                    <div class="column large-3 tab-12">
+                                        <h3 class="section-header-allcaps">language<br \>localization</h3>
+                                    </div>
+                                    <div class="column large-9 tab-12">
+                                        <div class="resume-block">
+
+                                            <p>
+                                                <?php echo htmlspecialchars($lang['translation-description'] ?? ''); ?>
+                                            </p>
+
+                                            <ul class="skill-bars-fat">
+                                                <li>
+                                                    <div class="progress percent100"></div>
+                                                    <strong>
+                                                        简体中文/people's republic of china
+                                                    </strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent90"></div>
+                                                    <strong>繁體中文/hong kong, taiwan, macau (PRC)</strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent85"></div>
+                                                    <strong>
+                                                        english/united states
+                                                    </strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent75"></div>
+                                                    <strong>Русский язык/russian federation</strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent5"></div>
+                                                    <strong>Deutsch/germany</strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent75"></div>
+                                                    <strong>日本語/japan</strong>
+                                                </li>
+                                                <li>
+                                                    <div class="progress percent5"></div>
+                                                    <strong>한국어/republic of korea</strong>
+                                                </li>
+                                            </ul>
+
+                                        </div> <!-- end resume-block -->
+
+                                    </div>
+                                </div> <!-- s-resume__section -->
+
+                            </section> <!-- end s-resume -->
 
 
-                        <!-- portfolio
+                            <!-- portfolio
                                     ===================== -->
-                        <section id="portfolio" class="s-portfolio target-section">
-                            <section id="photos">
+                            <section id="portfolio" class="s-portfolio target-section">
+                                <section id="photos">
 
-                                <div class="row s-portfolio__header">
-                                    <div class="column large-12">
-                                        <h3><?php echo htmlspecialchars($lang['photo-title'] ?? ''); ?>
-                                        </h3>
+                                    <div class="row s-portfolio__header">
+                                        <div class="column large-12">
+                                            <h3><?php echo htmlspecialchars($lang['photo-title'] ?? ''); ?>
+                                            </h3>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div
-                                    class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+                                    <div
+                                        class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
 
-                                    <div class="column folio-item">
-                                        <a href="#modal-01" class="folio-item__thumb">
-                                            <img src="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
-                                                srcset="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
-                                                alt="图片未加载，请联系网站管理员。">
-                                        </a>
-                                    </div> <!-- end folio-item -->
+                                        <div class="column folio-item">
+                                            <a href="#modal-01" class="folio-item__thumb">
+                                                <img src="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
+                                                    srcset="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
+                                                    alt="图片未加载，请联系网站管理员。">
+                                            </a>
+                                        </div> <!-- end folio-item -->
 
-                                    <div class="column folio-item">
-                                        <a href="#modal-02" class="folio-item__thumb">
-                                            <img src="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
-                                                srcset="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
-                                                alt="图片未加载，请联系网站管理员。">
-                                        </a>
-                                    </div> <!-- end folio-item -->
+                                        <div class="column folio-item">
+                                            <a href="#modal-02" class="folio-item__thumb">
+                                                <img src="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
+                                                    srcset="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
+                                                    alt="图片未加载，请联系网站管理员。">
+                                            </a>
+                                        </div> <!-- end folio-item -->
 
-                                    <div class="column folio-item">
-                                        <a href="#modal-03" class="folio-item__thumb">
-                                            <img src="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
-                                                srcset="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
-                                                alt="图片未加载，请联系网站管理员。">
-                                        </a>
-                                    </div> <!-- end folio-item -->
+                                        <div class="column folio-item">
+                                            <a href="#modal-03" class="folio-item__thumb">
+                                                <img src="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
+                                                    srcset="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
+                                                    alt="图片未加载，请联系网站管理员。">
+                                            </a>
+                                        </div> <!-- end folio-item -->
 
-                                    <div class="column folio-item">
-                                        <a href="#modal-04" class="folio-item__thumb">
-                                            <img src="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
-                                                srcset="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
-                                                alt="图片未加载，请联系网站管理员。">
-                                        </a>
-                                    </div> <!-- end folio-item -->
+                                        <div class="column folio-item">
+                                            <a href="#modal-04" class="folio-item__thumb">
+                                                <img src="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
+                                                    srcset="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
+                                                    alt="图片未加载，请联系网站管理员。">
+                                            </a>
+                                        </div> <!-- end folio-item -->
 
-                                </div> <!-- end folio-list -->
+                                    </div> <!-- end folio-list -->
 
 
-                                <!-- Modal Templates Popup
+                                    <!-- Modal Templates Popup
                                                     == -->
-                                <div id="modal-01" hidden>
-                                    <div class="modal-popup">
-                                        <img src="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
-                                            alt="来福" />
+                                    <div id="modal-01" hidden>
+                                        <div class="modal-popup">
+                                            <img src="https://cdn.z.wiki/autoupload/20250529/zftP/964X964/laifu.jpg"
+                                                alt="来福" />
 
-                                        <div class="modal-popup__desc">
-                                            <h5><?php echo htmlspecialchars($lang['laifu'] ?? ''); ?>
-                                            </h5>
-                                            <p><?php echo htmlspecialchars($lang['laifu-description'] ?? ''); ?>
-                                            </p>
-                                            <ul class="modal-popup__cat">
-                                                <li><?php echo htmlspecialchars($lang['laifu-time'] ?? ''); ?>
-                                                </li>
-                                                <li><?php echo htmlspecialchars($lang['laifu-type'] ?? ''); ?>
-                                                </li>
-                                                <li><?php echo htmlspecialchars($lang['laifu-localtion'] ?? ''); ?>
-                                                </li>
-                                            </ul>
+                                            <div class="modal-popup__desc">
+                                                <h5><?php echo htmlspecialchars($lang['laifu'] ?? ''); ?>
+                                                </h5>
+                                                <p><?php echo htmlspecialchars($lang['laifu-description'] ?? ''); ?>
+                                                </p>
+                                                <ul class="modal-popup__cat">
+                                                    <li><?php echo htmlspecialchars($lang['laifu-time'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['laifu-type'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['laifu-localtion'] ?? ''); ?>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
                                         </div>
+                                    </div> <!-- end modal -->
 
-                                    </div>
-                                </div> <!-- end modal -->
+                                    <div id="modal-02" hidden>
+                                        <div class="modal-popup">
+                                            <img src="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
+                                                alt="" />
 
-                                <div id="modal-02" hidden>
-                                    <div class="modal-popup">
-                                        <img src="https://2.z.wiki/autoupload/20250529/tk6C/2679X2679/7430562FEACC6D1C7AE435774265C090.png"
-                                            alt="" />
+                                            <div class="modal-popup__desc">
+                                                <h5><?php echo htmlspecialchars($lang['xianmi-national'] ?? ''); ?>
+                                                </h5>
+                                                <p><?php echo htmlspecialchars($lang['xianmi-description'] ?? ''); ?>
+                                                </p>
+                                                <ul class="modal-popup__cat">
+                                                    <li><?php echo htmlspecialchars($lang['xianmi-time'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['xianmi-type'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['xianmi-location'] ?? ''); ?>
+                                                    </li>
+                                                </ul>
+                                            </div>
 
-                                        <div class="modal-popup__desc">
-                                            <h5><?php echo htmlspecialchars($lang['xianmi-national'] ?? ''); ?>
-                                            </h5>
-                                            <p><?php echo htmlspecialchars($lang['xianmi-description'] ?? ''); ?>
-                                            </p>
-                                            <ul class="modal-popup__cat">
-                                                <li><?php echo htmlspecialchars($lang['xianmi-time'] ?? ''); ?>
-                                                </li>
-                                                <li><?php echo htmlspecialchars($lang['xianmi-type'] ?? ''); ?>
-                                                </li>
-                                                <li><?php echo htmlspecialchars($lang['xianmi-location'] ?? ''); ?>
-                                                </li>
-                                            </ul>
                                         </div>
+                                    </div> <!-- end modal -->
 
-                                    </div>
-                                </div> <!-- end modal -->
+                                    <div id="modal-03" hidden>
+                                        <div class="modal-popup">
+                                            <img src="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
+                                                alt="" />
 
-                                <div id="modal-03" hidden>
-                                    <div class="modal-popup">
-                                        <img src="https://2.z.wiki/autoupload/20250529/5jzL/3024X3024/D899347890A7B9B8AE0587A353697366.jpg"
-                                            alt="" />
+                                            <div class="modal-popup__desc">
+                                                <h5><?php echo htmlspecialchars($lang['taklamakan-desert'] ?? ''); ?>
+                                                </h5>
+                                                <p><?php echo htmlspecialchars($lang['taklamakan-description'] ?? ''); ?>
+                                                </p>
+                                                <ul class="modal-popup__cat">
+                                                    <li><?php echo htmlspecialchars($lang['taklamakan-time'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['taklamakan-type'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['taklamakan-location'] ?? ''); ?>
+                                                    </li>
+                                                </ul>
+                                            </div>
 
-                                        <div class="modal-popup__desc">
-                                            <h5><?php echo htmlspecialchars($lang['taklamakan-desert'] ?? ''); ?>
-                                            </h5>
-                                            <p><?php echo htmlspecialchars($lang['taklamakan-description'] ?? ''); ?>
-                                            </p>
-                                            <ul class="modal-popup__cat">
-                                                <li><?php echo htmlspecialchars($lang['taklamakan-time'] ?? ''); ?>
-                                                </li>
-                                                <li><?php echo htmlspecialchars($lang['taklamakan-type'] ?? ''); ?>
-                                                </li>
-                                                <li><?php echo htmlspecialchars($lang['taklamakan-location'] ?? ''); ?>
-                                                </li>
-                                            </ul>
                                         </div>
+                                    </div> <!-- end modal -->
 
-                                    </div>
-                                </div> <!-- end modal -->
+                                    <div id="modal-04" hidden>
+                                        <div class="modal-popup">
+                                            <img src="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
+                                                alt="" />
 
-                                <div id="modal-04" hidden>
-                                    <div class="modal-popup">
-                                        <img src="https://2.z.wiki/autoupload/20250529/WGGJ/828X828/thunder.jpg"
-                                            alt="" />
+                                            <div class="modal-popup__desc">
+                                                <h5><?php echo htmlspecialchars($lang['thunder'] ?? ''); ?>
+                                                </h5>
+                                                <p><?php echo htmlspecialchars($lang['thunder-description'] ?? ''); ?>
+                                                </p>
+                                                <ul class="modal-popup__cat">
+                                                    <li><?php echo htmlspecialchars($lang['thunder-time'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['thunder-type'] ?? ''); ?>
+                                                    </li>
+                                                    <li><?php echo htmlspecialchars($lang['thunder-location'] ?? ''); ?>
+                                                    </li>
+                                                </ul>
+                                            </div>
 
-                                        <div class="modal-popup__desc">
-                                            <h5><?php echo htmlspecialchars($lang['thunder'] ?? ''); ?>
-                                            </h5>
-                                            <p><?php echo htmlspecialchars($lang['thunder-description'] ?? ''); ?>
-                                            </p>
-                                            <ul class="modal-popup__cat">
-                                                <li><?php echo htmlspecialchars($lang['thunder-time'] ?? ''); ?>
-                                                </li>
-                                                <li><?php echo htmlspecialchars($lang['thunder-type'] ?? ''); ?>
-                                                </li>
-                                                <li><?php echo htmlspecialchars($lang['thunder-location'] ?? ''); ?>
-                                                </li>
-                                            </ul>
                                         </div>
+                                    </div> <!-- end modal -->
 
-                                    </div>
-                                </div> <!-- end modal -->
-
-                            </section> <!-- end s-portfolio -->
-                        </section>
+                                </section> <!-- end s-portfolio -->
+                            </section>
     </div>
 
 
@@ -984,27 +1010,16 @@ if (!empty($config['site_start_date'])) {
             <ul>
                 <li><a href="#body" class=""><?php echo htmlspecialchars($lang['body'] ?? ''); ?></a>
                     <ul>
-                        <li><a href="#vote" class=""><?php echo htmlspecialchars($lang['vote'] ?? ''); ?></a></li>
                         <li><a href="#statistics"
                                 class=""><?php echo htmlspecialchars($lang['statistics'] ?? ''); ?></a>
                         </li>
-                        <li><a href="#announcement"
-                                class=""><?php echo htmlspecialchars($lang['announcement'] ?? ''); ?></a></li>
                         <li><a href="#post" class=""><?php echo htmlspecialchars($lang['post'] ?? ''); ?></a></li>
                         <li><a href="#utilities" class=""><?php echo htmlspecialchars($lang['utilities'] ?? ''); ?></a>
                         </li>
-                        <li><a href="#article" class=""><?php echo htmlspecialchars($lang['article'] ?? ''); ?></a>
-                            <ul>
-                                <li><a href="#article1"
-                                        class=""><?php echo htmlspecialchars($lang['article1'] ?? ''); ?></a></li>
-                                <li><a href="#article2"
-                                        class=""><?php echo htmlspecialchars($lang['article2'] ?? ''); ?></a></li>
-                                <li><a href="#article3"
-                                        class=""><?php echo htmlspecialchars($lang['article3'] ?? ''); ?></a></li>
-                            </ul>
-                        </li>
                         <li><a href="#partnership"
                                 class=""><?php echo htmlspecialchars($lang['partnership'] ?? ''); ?></a>
+                        </li>
+                        <li><a href="#friendship" class=""><?php echo htmlspecialchars($lang['friendship'] ?? ''); ?></a>
                         </li>
                         <li><a href="#language" class=""><?php echo htmlspecialchars($lang['language'] ?? ''); ?></a>
                         </li>
